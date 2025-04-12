@@ -1,1 +1,3 @@
-Practicando git
+Practicando git modificando el archivo
+
+okey

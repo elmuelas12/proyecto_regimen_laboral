@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration:none ;
-    font-family: sans-serif;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 header{
@@ -88,4 +91,174 @@ header{
 .menu .tex-menu-selected{
     color: #42a2fd;
 
+}
+
+/*portada */
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/img_medellin.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 172, 255, 0.8);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+
+.container-cover-info{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+}
+
+
+.container-cover-info h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+
+.container-cover-info p{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*Contenedor - contenido del articulo*/
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 140px;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20 px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #42a2fd;
+}
+
+article h1{
+    margin-top: 20px;
+    front-weight: 500;
+    front-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    front-size: 18px;
+    color: #3c3c3c;
+}
+
+article img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*footer - pie de pagina*/
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #f7f7f7;
+    margin-top: 40px;
+
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+ footer .redes-footer .fa-facebook-f:hover{
+    background: #41579a;
+    color: #fff;
+}
+
+footer .redes-footer .fa-google-plus-g:hover{
+    background: #de4c34;
+    color: #fff;
+}
+
+footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #fcde30,#e9712a,#d2313b,#ae4198,#7540a1,#5443ab);
+    color: #fff;
+}
+
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #c0c0c07a;
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 20px;
+    color: #8e8e8e;
+    font-weight: 500px;
 }

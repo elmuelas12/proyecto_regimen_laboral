@@ -41,7 +41,7 @@ header{
 }
 
 .logo h1 b{
-    color: #f4f885;
+    color: #004884;;
 }
 
 
@@ -72,7 +72,7 @@ header{
     content: '';
     width: 100%;
     height: 4px;
-    background: #e7f37d;
+    background: #004884;;
     position: absolute;
     top: 0;
     left: 0;
@@ -85,11 +85,11 @@ header{
 }
 
 .menu nav ul li a:hover{
-    color: #e7f37d;
+    color:#004884;;
 }
 
 .menu .text-menu-selected{
-    color: #e7f37d;
+    color:#004884;;
 }
 
 .menu nav ul li a i{
@@ -143,7 +143,7 @@ header{
     content: '';
     width: 100%;
     height: 100%;
-    background: rgba(218, 244, 140, 0.8);
+    background: linear-gradient(180deg, rgba(27, 74, 167, .75) 0%, rgba(17, 54, 128, .75) 75%);;
     position: absolute;
     top: 0;
     left: 0;
@@ -202,7 +202,7 @@ article:before{
     position: absolute;
     top: 0;
     left: 0;
-    background: #46a2fd;
+    background: #004884;;
 }
 
 article h1{
@@ -277,7 +277,7 @@ article img{
     margin-left: 20px;
     padding: 10px 50px;
     font-size: 16px;
-    background: #46a2fd;
+    background: #004884;;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -295,7 +295,7 @@ article img{
 .container-footer{
     width: 100%;
     padding: 40px 0;
-    background: #c34646;
+    background: #b9b8b8;
     margin-top: 40px;
 }
 
@@ -481,7 +481,7 @@ footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram
         width: 20px;
         display: inline-block;
         margin-right: 10px;
-        color: #46a2fd;
+        color:  #004884;
     }
 
     #icon-menu{

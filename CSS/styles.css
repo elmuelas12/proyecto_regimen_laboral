@@ -35,7 +35,7 @@ header{
 }
 
 .logo h1 b{
-    color: #46a2fd;
+    color: #f4f885;
 }
 
 
@@ -66,7 +66,7 @@ header{
     content: '';
     width: 100%;
     height: 4px;
-    background: #46a2fd;
+    background: #e7f37d;
     position: absolute;
     top: 0;
     left: 0;
@@ -79,11 +79,11 @@ header{
 }
 
 .menu nav ul li a:hover{
-    color: #46a2fd;
+    color: #e7f37d;
 }
 
 .menu .text-menu-selected{
-    color: #46a2fd;
+    color: #e7f37d;
 }
 
 .menu nav ul li a i{
@@ -129,7 +129,7 @@ header{
     content: '';
     width: 100%;
     height: 100%;
-    background: rgba(38, 172, 255, 0.8);
+    background: rgba(218, 244, 140, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -194,7 +194,24 @@ article:before{
 article h1{
     margin-top: 20px;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+article h1 b{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32.5px;
+}
+article summary{
+    display: flex;
+    align-items: center;
+}
+
+article summary h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 26.5px;
 }
 
 article p{
@@ -203,12 +220,22 @@ article p{
     color: #3c3c3c;
 }
 
-article img{
-    width: 100%;
+article ol, ul{
+    position: relative;
     margin-top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
 }
 
-/*Aside de los articulos de relacionados*/
+article img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 16%;
+}
+
+/*Aside de los articulos de relacionados posicion derecha*/
 
 .container-aside aside{
   width: 320px;
@@ -254,7 +281,7 @@ article img{
 .container-footer{
     width: 100%;
     padding: 40px 0;
-    background: #f7f7f7;
+    background: #c34646;
     margin-top: 40px;
 }
 
@@ -268,7 +295,7 @@ article img{
 }
 
 .container-footer footer .logo-footer img{
-    width: 100px;
+    width: 20%;
 }
 
 .container-footer footer .redes-footer{
@@ -318,7 +345,7 @@ footer .redes-footer .fa-instagram:hover{
 .container-footer h4{
     text-align: center;
     margin-top: 40px;
-    color: #8e8e8e;
+    color: #313030;
     font-weight: 500;
 }
 

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b{
+    color: #004884;;
+}
+
+
+.menu {
+    height: 80px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #004884;;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    color: #777777;
+    font-size: 18px;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+    color:#004884;;
+}
+
+.menu .text-menu-selected{
+    color:#004884;;
+}
+
+.menu nav ul li a i{
+    display: none;
+}
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+}
+ 
+.bandera-antioquia {
+    width: 50px;               
+    height: auto;              
+    position: fixed;           
+    top: 10px;                 
+    right: 60px;               
+    z-index: 999;              
+  }
+
+
+/*Contenedor - contenido del articulo*/
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 10px -6px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;    
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #004884;;
+}
+
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+article h1 b{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32.5px;
+}
+
+article h2{
+    font-weight: 600;
+}
+article summary{
+    display: flex;
+    align-items: center;
+}
+
+article summary h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 26.5px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+article ol, ul{
+    position: relative;
+    margin-top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+.imagen_y_texto {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.imagen_y_texto img {
+    width: 35%;
+    height: 10%;
+}
+
+.text_lado {
+    width: 70%; 
+}
+
+/* Columnas */
+.contenedor-columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+  }
+
+  .columna {
+    flex: 1;
+    min-width: 300px; 
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 1px solid #000;
+  }
+
+  th {
+    background-color: #e6e6e6;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+
+/* Ventajas y Limitaciones */
+
+.contenedor-ventajas-limitaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* para que se acomode en pantallas pequeñas */
+    margin-top: 20px;
+  }
+
+  .columna {
+    flex: 1;
+    min-width: 300px;
+    padding: 5px;
+  }
+
+  .separador {
+    width: 1px;
+    background-color: #000;
+    height: auto;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+/*Footer - pie de pagina*/
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #b9b8b8;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 20%;
+}
+.container-footer footer .redes-footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+.container-footer footer .redes-footer--left{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+}
+.container-footer footer .redes-footer--right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.container-footer footer .redes-footer--left .icon-redes-footer,
+.redes-footer--right .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+footer .redes-footer--left .fa-facebook-f:hover{
+    background: #41579A;
+    color: #fff;
+}
+.redes-footer--right .fa-threads:hover{
+    background: #000000; /* color de fondo típico de Threads */
+    color: #ffffff;      /* color del ícono al hacer hover */
+}
+
+footer .redes-footer--left .fa-google-plus-g:hover,.redes-footer--right .fa-google-plus-g:hover{
+    background: #DE4C34;
+    color: #fff;
+}
+.redes-footer--right .fa-tiktok:hover{
+    background: #010101; /* fondo negro característico de TikTok */
+    color: #fff;          /* ícono blanco al pasar el mouse */
+}
+.redes-footer--right .fa-twitter:hover{
+    background: #1DA1F2; /* color oficial de Twitter */
+    color: #fff;         /* ícono blanco sobre fondo azul */
+}
+footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+}
+
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, #FFD700 33.3%, #0033A0 33.3% 66.6%, #CE1126 66.6%);
+}
+
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #313030;
+    font-weight: 500;
+}

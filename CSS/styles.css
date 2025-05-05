@@ -126,54 +126,73 @@ header{
     z-index: 999;              /* Asegura que esté por encima de otros elementos */
   }
 /*Portada*/
-
-
-.container-cover{
-    width: 100%;
-    height: 500px;
+#inicio .carrusel {
     position: relative;
-    margin-top: 80px;
-    background-image: url(../img/img_medellin.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-.container-cover:before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(27, 74, 167, .75) 0%, rgba(17, 54, 128, .75) 75%);;
+#inicio .carrusel .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+#inicio .carrusel::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(27, 74, 167, .75) 0%, rgba(17, 54, 128, .75) 75%);
+    z-index: 1;
+    pointer-events: none;
+}
+#inicio .carrusel .info h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
 }
 
-.container-info-cover{
-    max-width: 800px;
-    height: 500px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+#inicio .carrusel .info button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #a7c7e7;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#inicio .gallery {
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
-.container-info-cover h1{
-    font-size: 60px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 20px;
+#inicio .gallery-cell {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.container-info-cover p{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
+#inicio .gallery-cell img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 0;
 }
+
+
 
 /*Contenedor - contenido del articulo*/
 

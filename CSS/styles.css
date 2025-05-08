@@ -125,10 +125,15 @@ header{
     right: 60px;               /* Ajusta el espacio desde el borde derecho */
     z-index: 999;              /* Asegura que esté por encima de otros elementos */
   }
+
 /*Portada*/
+
 #inicio .carrusel {
     position: relative;
-    height: 100vh;
+    height: 80vh;
+    padding: 20px;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
 }
 
 #inicio .carrusel .info {
@@ -136,7 +141,9 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 80%;
     width: 50%;
+    padding: 20px;
     text-align: center;
     color: #fff;
     z-index: 2;
@@ -148,10 +155,16 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(27, 74, 167, .75) 0%, rgba(17, 54, 128, .75) 75%);
     z-index: 1;
     pointer-events: none;
+    border-radius: 20px;
 }
+
+#inicio .carrusel .info h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
 #inicio .carrusel .info h2 {
     font-size: 50px;
     margin-bottom: 20px;
@@ -169,27 +182,30 @@ header{
     border-radius: 30px;
     cursor: pointer;
 }
-
+/* Ajuste para centrar mejor el contenido del carrusel */
 #inicio .gallery {
+    position: relative;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    margin: 0 auto;
+    max-width: 1600px; /* Limita el ancho máximo para pantallas muy grandes */
+    border-radius: 20px; /* Bordes redondeados elegantes */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Sombra sutil */
+
 }
 
 #inicio .gallery-cell {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 #inicio .gallery-cell img {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
-    position: relative;
-    z-index: 0;
 }
 
 
@@ -267,6 +283,39 @@ article img{
     width: 80%;
     height: 16%;
 }
+
+details summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 20px;
+    color: #004884;
+    display: flex;
+    align-items: center;
+}
+
+details summary::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+details[open] summary::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.summary-title {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
 
 /*Aside de los articulos de relacionados posicion derecha*/
 
@@ -511,4 +560,12 @@ footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram
         flex-wrap: wrap;
     }
 
+}
+
+.imagen-articulo {
+    display: block;
+    margin: 40px auto;
+    max-width: 80%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
 }

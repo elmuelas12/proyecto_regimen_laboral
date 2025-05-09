@@ -4,85 +4,71 @@
      <meta charset="UTF-8">
      <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
      <title>LegaLab</title>
-    
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
- 
      <link rel="stylesheet" href="CSS/styles.css">
- 
      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- 
  </head>
- <body>
- 
-     <!--Header - menu-->
-     <header>
- 
+<body>
+    
+  <!--Header - menu-->
+  <header>
          <div class="header-content">
- 
              <div class="logo">
                  <h1>lega<b>lab</b></h1>
              </div>
- 
+
              <div class="menu" id="show-menu">
- 
-                <nav>
-              <a href="#inicio">
-              <img src="img/imagen_2025-05-01_075718321-removebg-preview.png" 
-             alt="Bandera de Antioquia" 
-             class="bandera-antioquia">
-               </a>
-    <ul>
-        <li>
-            <a href="#">
-                <i class="fa-light fa-scale-balanced"></i> Jurisprudencia
-            </a>
-        </li>
-        <li class="menu-selected">
-            <a href="#" class="text-menu-selected">
-                <i class="fas fa-file-alt"></i> Informacion clave
-            </a>
-        </li>
-        <li>
-            <a href="#contacto">
-                <i class="fas fa-headset"></i> Contacto
-            </a>
-        </li>
-      </ul>
-</nav>
-    
-              
- 
+              <nav>
+                <a href="#inicio">
+                  <img src="img/imagen_2025-05-01_075718321-removebg-preview.png" alt="Bandera de Antioquia" class="bandera-antioquia">
+                </a>
+                  <ul>
+                      <li>
+                          <a href="HTML/pestaña1.html">
+                              <i class="fa-light fa-scale-balanced"></i> Jurisprudencia
+                          </a>
+                      </li>
+                      <li class="menu-selected">
+                          <a href="HTML/pestaña2.html" class="text-menu-selected">
+                              <i class="fas fa-file-alt"></i> Informacion clave
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#contacto">
+                              <i class="fas fa-headset"></i> Contacto
+                          </a>
+                      </li>
+                    </ul>
+              </nav>
              </div>
- 
+
          </div>
  
          <div id="icon-menu">
              <i class="fas fa-bars"></i>
          </div>
- 
-     </header>
+  </header>
      
      <!-- Carrusel -->
-<section id="inicio">
-  <br><br><br><br>
-  <div class="carrusel">
-    <div class="fondo"></div>
-    <div class="overlay"></div>
-    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false, "autoPlay": true }'>
-      <div class="gallery-cell"><img src="img/997.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="img/carusel 2.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="img/carusel 3.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="img/carusel 6.jpg" alt=""></div>
-      <div class="gallery-cell"><img src="img/carusel 5.jpg" alt=""></div>
+  <section id="inicio">
+    <br><br><br><br>
+    <div class="carrusel">
+      <div class="fondo"></div>
+      <div class="overlay"></div>
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false, "autoPlay": true }'>
+        <div class="gallery-cell"><img src="img/997.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="img/carusel 2.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="img/carusel 3.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="img/carusel 6.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="img/carusel 5.jpg" alt=""></div>
+      </div>
+      <div class="info">
+        <h1 style="font-size: 80px;">Bienvenido a WWW.LEGALAB.GOV.CO</h1>
+      </div>
     </div>
-    <div class="info">
-      <h1 style="font-size: 80px;">Bienvenido a WWW.LEGALAB.GOV.CO</h1>
-    </div>
-  </div>
-</section>
+  </section>
 
  
      <div class="container-content">
@@ -214,7 +200,7 @@
                 <img src="img/active imagen 1.png" alt="">
                 <h2>¿Que es la jurisprudencia?</h2>
                 <p>La jurisprudencia es el conjunto de sentencias y demás resoluciones judiciales emitidas en un mismo sentido por los órganos judiciales de un ordenamiento jurídico determinado. Tiene un valor fundamental como fuente de conocimiento del derecho positivo, con el cual se procura evitar que una misma situación jurídica sea interpretada en forma distinta por los tribunales; esto es lo que se conoce como el principio unificador o unificado.</p>
-                <a href="#"><button>leer más</button></a>
+                <a href="HTML/pestaña1.html"><button>leer más</button></a>
              </aside>
  
              <aside>
@@ -227,12 +213,11 @@
  
              <aside>
                 <h2>Palabras clave.</h2>
-                <p><a href="">★ Derecho positivo</a></p>
-                <p><a href="">★ Ordenamiento jurídico</a></p>
-                <p><a href="">★ Resoluciones judiciales</a></p>
-                <p><a href="">★ Derecho anglosajón</a></p>
-                <p><a href="">★ Sala de Casación Laboral de la Corte Suprema de Justicia</a></p>
-                
+                <p><a href="HTML/pestaña2.html" title="Conocer mas sobre este derecho">★ Derecho positivo</a></p>
+                <p><a href="HTML/pestaña2.html#derecho_positivo">★ Ordenamiento jurídico</a></p>
+                <p><a href="HTML/pestaña2.html#ordenamiento_juridico">★ Resoluciones judiciales</a></p>
+                <p><a href="HTML/pestaña2.html#resoluciones_judiciales">★ Derecho anglosajón</a></p>
+                <p><a href="HTML/pestaña2.html#derecho_anglosajon">★ Sala de Casación Laboral de la Corte Suprema de Justicia</a></p> 
              </aside>
  
          </div>

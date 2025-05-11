@@ -12,44 +12,70 @@
  </head>
 <body>
     
-  <!--Header - menu-->
-  <header>
-         <div class="header-content">
-             <div class="logo">
-                 <h1>lega<b>lab</b></h1>
-             </div>
+  <!-- Header - Menú principal -->
+<header>
+  <div class="header-content">
 
-             <div class="menu" id="show-menu">
-              <nav>
-                <a href="#inicio">
-                  <img src="img/imagen_2025-05-01_075718321-removebg-preview.png" alt="Bandera de Antioquia" class="bandera-antioquia">
+    <!-- Logo -->
+    <div class="logo">
+      <h1>lega<b>lab</b></h1>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="menu" id="show-menu">
+      <nav>
+
+        <!-- Imagen / bandera -->
+        <a href="#inicio">
+          <img 
+            src="img/imagen_2025-05-01_075718321-removebg-preview.png" 
+            alt="Bandera de Antioquia" 
+            class="bandera-antioquia"
+          >
+        </a>
+
+        <!-- Lista de enlaces -->
+        <ul>
+
+          <!-- Servicios con submenú -->
+          <li>
+            <a href="#">Servicios</a>
+            <ul>
+              <li>
+                <a href="HTML/pestaña1.html">
+                  <i class="fa-light fa-scale-balanced"></i> Jurisprudencia
                 </a>
-                  <ul>
-                      <li>
-                          <a href="HTML/pestaña1.html">
-                              <i class="fa-light fa-scale-balanced"></i> Jurisprudencia
-                          </a>
-                      </li>
-                      <li class="menu-selected">
-                          <a href="HTML/pestaña2.html" class="text-menu-selected">
-                              <i class="fas fa-file-alt"></i> Informacion clave
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#contacto">
-                              <i class="fas fa-headset"></i> Contacto
-                          </a>
-                      </li>
-                    </ul>
-              </nav>
-             </div>
+              </li>
+              <li>
+                <a href="HTML/pestaña2.html">
+                  <i class="fas fa-file-alt"></i> Información clave
+                </a>
+              </li>
+              <li>
+                <a href="HTML/pestaña3.html">
+                  <i class="fas fa-file-alt"></i> Pensiones
+                </a>
+              </li>
+            </ul>
+          </li>
 
-         </div>
- 
-         <div id="icon-menu">
-             <i class="fas fa-bars"></i>
-         </div>
-  </header>
+          <!-- Contacto -->
+          <li>
+            <a href="#contacto">
+              <i class="fas fa-headset"></i> Contacto
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Icono menú hamburguesa -->
+  <div id="icon-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
      
      <!-- Carrusel -->
   <section id="inicio">

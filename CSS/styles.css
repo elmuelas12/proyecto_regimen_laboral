@@ -112,7 +112,7 @@ header{
     opacity: 0.8;
 }
  
-.bandera-antioquia {
+.bandera-Colombia {
     width: 50px;               /* Ajusta el tamaño de la bandera */
     height: auto;              /* Mantiene la proporción de la imagen */
     position: fixed;           /* Fija la imagen en la pantalla */
@@ -120,13 +120,16 @@ header{
     right: 60px;               /* Ajusta el espacio desde el borde derecho */
     z-index: 999;              /* Asegura que esté por encima de otros elementos */
   }
+
 /* SUBMENÚ dentro de Servicios */
 .menu nav ul li ul {
   position: absolute;
     top: 100%;
     left: 0;
+    border-radius: 20px;
     width: 220px;
-    background: #ebebeb;
+    height: auto;
+    background: #f6f6f6;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     padding: 10px 0;
     opacity: 0;
@@ -144,11 +147,9 @@ header{
 
 .menu nav ul li ul::before {
   content: '';
-  width: 0;
-  height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-bottom: 12px solid white;
+  border-bottom: 12px solid rgb(214, 214, 214);
   position: absolute;
   top: -12px;
   left: 20px;
@@ -174,10 +175,11 @@ header{
   background: #0074C7;
   color: white;
   transform: scale(1.2);
-  padding-left: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  padding-left: 19px;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
+
 /*Portada*/
 
 #inicio .carrusel {
@@ -336,6 +338,7 @@ article img{
     height: 16%;
 }
 
+/*Desplegable*/
 details summary {
     cursor: pointer;
     list-style: none;

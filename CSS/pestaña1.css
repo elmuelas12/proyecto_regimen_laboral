@@ -121,6 +121,64 @@ header{
     z-index: 999;              
   }
 
+/* SUBMENÚ dentro de Servicios */
+.menu nav ul li ul {
+  position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 20px;
+    width: 220px;
+    height: auto;
+    background: #f6f6f6;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease, visibility 300ms ease;
+    display: block;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.menu nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu nav ul li ul::before {
+  content: '';
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgb(214, 214, 214);
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+
+.menu nav ul li ul li {
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+
+.menu nav ul li ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #004884;
+  font-size: 16px;
+  transition: all 300ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu nav ul li ul li a:hover {
+  background: #0074C7;
+  color: white;
+  transform: scale(1.2);
+  padding-left: 19px;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
 
 /*Contenedor - contenido del articulo*/
 
@@ -271,6 +329,38 @@ article ol, ul{
   li {
     margin-bottom: 10px;
   }
+
+details summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 20px;
+    color: #004884;
+    display: flex;
+    align-items: center;
+}
+
+details summary::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+details[open] summary::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.summary-title {
+    font-size: 26px;
+    line-height: 1.2;
+}
 
 /*Footer - pie de pagina*/
 

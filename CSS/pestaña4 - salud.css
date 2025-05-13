@@ -180,6 +180,31 @@ article li {
     margin-bottom: 10px;
 }
 
+
+/* ANIMACIONES BÁSICAS */
+.animado {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.animado-delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
 /*--------------------- IMAGEN Y TEXTO LATERAL ---------------------*/
 .imagen_y_texto {
     display: flex;

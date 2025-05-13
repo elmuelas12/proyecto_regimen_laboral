@@ -247,6 +247,86 @@ article li {
     margin-bottom: 10px;
 }
 
+.animar-in { opacity: 0; animation: slideIn 1.2s ease-in-out forwards; }
+    .animar-retardo { animation-delay: 0.4s; }
+    .animar-dos { animation-delay: 0.8s; }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .titulo-animado {
+      text-align: center;
+      font-size: 2.2em;
+      margin: 30px 0;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .caso-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #f4faff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 72, 132, 0.1);
+    }
+
+    .caso-box img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .caso-box h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #000000;
+    }
+
+    .caso-box p {
+      margin: 0;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .tabla-animada {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      background-color: #fefefe;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      animation: slideIn 1.5s ease-in-out forwards;
+    }
+
+    .tabla-animada th, .tabla-animada td {
+      padding: 16px;
+      text-align: left;
+    }
+
+    .tabla-animada thead {
+      background-color: #004884;
+      color: white;
+    }
+
+    .tabla-animada tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .tabla-container {
+      margin: 40px 0;
+      padding: 20px;
+      background: #eaf3fa;
+      border-left: 8px solid #004884;
+      border-radius: 10px;
+    }
+
+    
 /*--------------------- IMAGEN Y TEXTO LATERAL ---------------------*/
 .imagen_y_texto {
     display: flex;
@@ -261,7 +341,7 @@ article li {
 }
 
 .imagen_y_texto img {
-    width: 300px;
+    width: 450px;
     height: auto;
     border-radius: 8px;
 }
@@ -274,89 +354,29 @@ article li {
 }
 
 /*--------------------- COLUMNAS ---------------------*/
-.contenedor-columnas {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
 
-.columna {
-    flex: 1;
-    min-width: 300px;
-}
-.tabla-pensiones-container {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 20px;
-    background: #f5faff;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 72, 132, 0.2);
-}
-
-.tabla-pensiones {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1em;
-}
-
-.tabla-pensiones thead {
-    background-color: #004884;
-    color: white;
-}
-
-.tabla-pensiones th,
-.tabla-pensiones td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-}
-
-.tabla-pensiones tbody tr:nth-child(even) {
-    background-color: #e8f1fb;
-}
-
-.tabla-pensiones tbody tr:hover {
-    background-color: #d4e6f9;
-    cursor: pointer;
-}
-
-/*--------------------- TABLAS ---------------------*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #000;
-}
-
-th {
-    background-color: #e6e6e6;
-}
-
-th, td {
-    padding: 8px;
-    text-align: center;
-}
 
 /*--------------------- VENTAJAS Y LIMITACIONES ---------------------*/
 .contenedor-ventajas-limitaciones {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .separador {
-    width: 1px;
-    background-color: #000;
-    height: auto;
+  width: 2px;
+  margin: 0 10px;
 }
 
 /*--------------------- FOOTER ---------------------*/

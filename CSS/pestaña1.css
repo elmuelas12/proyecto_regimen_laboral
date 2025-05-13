@@ -52,6 +52,8 @@ header{
     height: 100%;
     display: flex;
     list-style: none;
+     margin: 0;
+    padding: 0;
 }
 
 .menu nav ul li{
@@ -61,7 +63,9 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+     cursor: pointer;
 }
+
 
 .menu-selected:before{
     content: '';

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header - Menú principal -->
+<!-- Header - Menú principal -->
 <header>
   <div class="header-content">
 
@@ -33,7 +33,6 @@
 
         <!-- Lista de enlaces -->
         <ul>
-
           <!-- Servicios con submenú -->
           <li>
             <a href="#">Servicios</a>
@@ -44,8 +43,18 @@
                 </a>
               </li>
               <li>
+                <a href="pestaña1.html">
+                  <i class="fa-light fa-scale-balanced"></i> Jurisprudencia
+                </a>
+              </li>
+              <li>
                 <a href="pestaña2.html">
                   <i class="fas fa-file-alt"></i> Información clave
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-light fa-scale-balanced"></i> Riesgos laborales
                 </a>
               </li>
               <li>
@@ -53,12 +62,6 @@
                   <i class="fas fa-file-alt"></i> Pensiones
                 </a>
               </li>
-              <li>
-                <a href="pestaña1.html">
-                  <i class="fas fa-file-alt"></i> Jurisprudencia
-                </a>
-              </li>
-
             </ul>
           </li>
 
@@ -68,7 +71,6 @@
               <i class="fas fa-headset"></i> Contacto
             </a>
           </li>
-
         </ul>
       </nav>
     </div>
@@ -79,13 +81,11 @@
     <i class="fas fa-bars"></i>
   </div>
 </header>
-<br><br><br>
-
 
     <!--Blog-->
     <div class="container-content">
   <article>
-    <h1 class="titulo-animado animado">Sistema de Salud en Colombia</h1>
+    <h1 class="titulo-animado animado" style="text-align: center;">Sistema de Salud en Colombia</h1>
     <p class="animado animado-delay">El sistema de salud colombiano funciona bajo dos regímenes: el contributivo y el subsidiado. Aunque ha habido avances importantes, muchos ciudadanos enfrentan barreras para el acceso oportuno a servicios de calidad.</p>
 
     <div style="height: 30px;"></div> <!-- Separador -->
@@ -97,7 +97,7 @@
       </div>
     </section>
 
-    <h2 class="titulo-animado animado">Tipos de Servicios en Salud Colombiana</h2>
+    <h2 class="titulo-animado animado" style="text-align: center;">Tipos de Servicios en Salud Colombiana.</h2>
 <div class="contenedor-columnas animado">
   <div class="columna animado"> <!-- Puedes añadir delay si quieres -->
     <h3>Consulta General</h3>
@@ -115,7 +115,7 @@
 
 <!-- Casos Relevantes - Carrusel de Texto -->
 <section class="seccion-casos">
-  <h2 class="titulo-animado">Casos Relevantes</h2>
+  <h2 class="titulo-animado" style="text-align: center;">Casos Relevantes</h2>
 
   <div class="carrusel-texto">
     <div class="slide activo">
@@ -152,10 +152,8 @@
 </div>
 </section>
 
-
-
 <!-- Tabla Comparativa integrada en el article -->
-<h2 class="animado">Comparativa de Regímenes</h2>
+<h2 class="animado" style="text-align: center;">Comparativa de Regímenes</h2>
 <div class="tabla-pensiones-container animado">
   <table class="tabla-pensiones">
     <thead>
@@ -188,40 +186,6 @@
 </article>
 </div> <!-- Cierra .container-content -->
 
- 
-    <script>
-  const slides = document.querySelectorAll('.slide');
-  const btnAnterior = document.getElementById('anterior');
-  const btnSiguiente = document.getElementById('siguiente');
-  let index = 0;
-
-  function mostrarSlide(nuevoIndex) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('activo');
-      if (i === nuevoIndex) {
-        slide.classList.add('activo');
-      }
-    });
-    index = nuevoIndex;
-  }
-
-  btnAnterior.addEventListener('click', () => {
-    let nuevo = (index - 1 + slides.length) % slides.length;
-    mostrarSlide(nuevo);
-  });
-
-  btnSiguiente.addEventListener('click', () => {
-    let nuevo = (index + 1) % slides.length;
-    mostrarSlide(nuevo);
-  });
-
-  // Avance automático
-  setInterval(() => {
-    let nuevo = (index + 1) % slides.length;
-    mostrarSlide(nuevo);
-  }, 6000);
-</script>
-
     <!-- Footer -->
   <div class="container-footer">
     <footer id="contactos">
@@ -247,5 +211,6 @@
       <h4>© 2025 legalab - Todos los Derechos Reservados al Estado Colombiano</h4>
     </footer>
   </div>
+  <script src="../js/salud.js"></script>
 </body>
 </html>

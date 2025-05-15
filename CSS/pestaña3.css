@@ -321,6 +321,7 @@ article li {
       padding: 20px;
       background: #eaf3fa;
       border-left: 8px solid #004884;
+      border-right: 8px solid #004884;
       border-radius: 10px;
     }
 

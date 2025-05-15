@@ -202,8 +202,128 @@ article li {
   }
 }
 
+.seccion-casos {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f1faff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+.carrusel-texto {
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+}
 
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.activo {
+  display: block;
+  animation: fadeIn 1s ease;
+}
+
+.controles-carrusel {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.controles-carrusel button {
+  background: #004884;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.controles-carrusel button:hover {
+  background: #006fc3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.texto-derechos {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.imagen-caso {
+  width: 100%;
+  max-width: 350px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.slide h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.slide p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.animado {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.animado-delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mejora visual de columnas sin fondo ni bordes */
+.contenedor-columnas {
+  background: none;
+  box-shadow: none;
+  padding: 20px 0;
+}
+
+.columna {
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.columna:hover {
+  transform: scale(1.05);
+  color: #004884;
+}
+
+.columna h3 {
+  font-size: 20px;
+  color: #004884;
+  margin-bottom: 10px;
+}
+
+.columna p {
+  font-size: 16px;
+  color: #333;
+}
 
 /*--------------------- IMAGEN Y TEXTO LATERAL ---------------------*/
 .imagen_y_texto {
@@ -216,6 +336,7 @@ article li {
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #004884;
 }
 
 .imagen_y_texto img {
@@ -245,6 +366,10 @@ article li {
     flex: 1;
     min-width: 300px;
 }
+.leyes-derechos {
+  margin-top: 40px;
+}
+
 .tabla-pensiones-container {
     margin: 0 auto;
     max-width: 1000px;
@@ -252,6 +377,8 @@ article li {
     background: #f5faff;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 72, 132, 0.2);
+    border-left: 6px solid #004884; /* Línea azul izquierda */
+     margin-top: 30px;
 }
 
 .tabla-pensiones {

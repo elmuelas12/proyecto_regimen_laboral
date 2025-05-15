@@ -29,3 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+
+  function showItem(index) {
+    const totalItems = items.length;
+    index = (index + totalItems) % totalItems;
+    
+    items.forEach((item, i) => {
+      item.classList.remove('active');
+      item.style.transition = 'transform 1s ease-in-out, opacity 1s ease-in-out';
+      if (i === index) {
+        item.classList.add('active');
+      }
+    });
+
+    currentIndex = index;
+  }
+
+  prevButton.addEventListener('click', () => showItem(currentIndex - 1));
+  nextButton.addEventListener('click', () => showItem(currentIndex + 1));
+
+  // Inicializa el carrusel en el primer ítem
+  showItem(currentIndex);

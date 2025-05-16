@@ -123,13 +123,15 @@ header{
 
 /* Animaciones pertinentes blog */
 .tabla-container {
-  margin: 40px 0 40px 60px; /* 60px desde la izquierda */
+  margin: 40px auto; /* Centrado horizontal con auto en los lados */
   padding: 20px;
   background: linear-gradient(to right, #eaf3fa, #ffffff);
   border-left: 8px solid #004884;
+  border-right: 8px solid #004884;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 72, 132, 0.1);
   max-width: 1000px;
+  width: calc(100% - 120px); /* Ajuste para el margen deseado */
   overflow-x: auto;
 }
 
@@ -250,7 +252,7 @@ header{
   perspective: 1000px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   background: linear-gradient(90deg, #004884, #0074C7);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -557,8 +559,8 @@ article li {
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-right: 6px solid #004884;
+    border-left: 6px solid #004884;
 }
 
 .imagen_y_texto img {

@@ -121,6 +121,227 @@ header{
     z-index: 999;
 }
 
+/* Animaciones pertinentes blog */
+.tabla-container {
+  margin: 40px 0 40px 60px; /* 60px desde la izquierda */
+  padding: 20px;
+  background: linear-gradient(to right, #eaf3fa, #ffffff);
+  border-left: 8px solid #004884;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 72, 132, 0.1);
+  max-width: 1000px;
+  overflow-x: auto;
+}
+
+.tabla-animada {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+.tabla-animada thead {
+  background-color: #004884;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tabla-animada th, .tabla-animada td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tabla-animada tbody tr:hover {
+  background: #f0f8ff;
+  transform: scale(1.01);
+  box-shadow: inset 0 0 0 2px #00488444;
+}
+
+.tabla-animada tbody tr td:first-child {
+  font-weight: 600;
+  color: #004884;
+}
+
+/* Efecto de entrada */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ========== CUADROS INTERACTIVOS ESTILO TYMPANUS ========== */
+.galeria-casos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px auto;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+.efecto-hover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(254, 254, 254, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.efecto-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.efecto-hover:hover img {
+  transform: scale(1.1);
+}
+
+.contenido-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(254, 254, 254, 0.7), transparent);
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.efecto-hover:hover .contenido-hover {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.contenido-hover h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.contenido-hover p {
+  font-size: 0.95em;
+  line-height: 1.4em;
+  color: #000000;
+}
+/* Animaciones pertinentes blog */
+/* --- ANIMACIÓN 3D REVEAL AVANZADA CON CSS3 --- */
+@keyframes flipIn {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg) scale(0.8);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+}
+
+.super-titulo {
+  animation: flipIn 1.5s ease-out forwards;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  background: linear-gradient(90deg, #004884, #0074C7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Imagen con reflejo y profundidad */
+.imagen_y_texto img {
+  transition: all 0.6s ease;
+  transform: scale(1) perspective(1000px);
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+.imagen_y_texto img:hover {
+  transform: scale(1.05) rotateY(8deg);
+}
+
+/* Casos interactivos con brillo */
+.caso-box {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.caso-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+  transform: rotate(25deg);
+  animation: shine 5s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(100%) rotate(25deg); }
+}
+
+/* Texto emergente con animación flotante */
+.caso-box h3, .caso-box p {
+  animation: floatText 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes floatText {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= ANIMACIONES PARA BLOG DE RIESGOS ================= */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.wow-reveal {
+  opacity: 0;
+  animation: popUp 1.2s ease-out forwards;
+  transform-origin: center;
+}
+
+.retraso-1 { animation-delay: 0.3s; }
+.retraso-2 { animation-delay: 0.6s; }
+.retraso-3 { animation-delay: 0.9s; }
+
+.interactive-box {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.interactive-box:hover {
+  transform: scale(1.05) rotateZ(1deg);
+  box-shadow: 0 15px 30px rgba(0, 72, 132, 0.4);
+}
+
+.imagen_y_texto img:hover {
+  transform: perspective(800px) rotateY(5deg) rotateX(5deg) scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+
+
+
 /* SUBMENÚ dentro de Servicios */
 .menu nav ul li ul {
   position: absolute;
@@ -322,7 +543,6 @@ article li {
       padding: 20px;
       background: #eaf3fa;
       border-left: 8px solid #004884;
-      border-right: 8px solid #004884;
       border-radius: 10px;
     }
 

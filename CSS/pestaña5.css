@@ -166,7 +166,7 @@ header{
 
 .tabla-animada tbody tr td:first-child {
   font-weight: 600;
-  color: #004884;
+  color: #0f62fe;
 }
 
 /* Efecto de entrada */
@@ -239,7 +239,7 @@ header{
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #f0f0f0, #e0e0ff);
+  background: rgb(255, 255, 255);
 }
 
 .contenedor-tarjeta {
@@ -248,26 +248,21 @@ header{
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  padding: 30px;
+  padding: 5px;
   transition: transform 0.8s ease, box-shadow 0.8s ease;
   transform-style: preserve-3d;
-  max-width: 1000px;
+  max-width: 2000px;
   cursor: pointer;
-}
-.contenedor-tarjeta:hover {
-  transform: rotateY(5deg) rotateX(3deg);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
 }
 
 .tarjeta-contenido {
-  max-width: 500px;
+  max-width: 1000px;
   color: #2d2d2d;
 }
 .tarjeta-contenido h2 {
   font-size: 2.2rem;
   margin-bottom: 15px;
-  color: #2f3e9e;
+  color: #000000;
   text-shadow: 1px 1px 0px #fff;
   position: relative;
 }
@@ -277,9 +272,7 @@ header{
   bottom: -8px;
   left: 0;
   width: 60px;
-  height: 3px;
-  background: #ff5e5e;
-  animation: brilloLinea 2s infinite;
+  height: 5px;
 }
 .tarjeta-contenido p {
   font-size: 1.1rem;
@@ -291,7 +284,7 @@ header{
   width: 280px;
   border-radius: 15px;
   transition: transform 0.5s ease;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(82, 82, 82, 0.2);
 }
 .tarjeta-riesgos:hover .tarjeta-imagen img {
   transform: scale(1.05) rotate(1deg);
@@ -312,22 +305,10 @@ header{
 .titulo-capsula {
   text-align: center;
   font-size: 2.5rem;
-  color: #0f62fe;
+  color: #000000;
   margin-bottom: 20px;
   position: relative;
   animation: entradaZoom 1s ease-in-out forwards;
-}
-.titulo-capsula::after {
-  content: '';
-  position: absolute;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #0f62fe, #82cfff);
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  border-radius: 2px;
-  animation: brillar 2s infinite;
 }
 
 .contenedor-capsula {
@@ -341,7 +322,6 @@ header{
 .caja-capsula {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
@@ -351,25 +331,24 @@ header{
 
 .tabla-capsula {
   width: 100%;
-  min-width: 600px;
   border-collapse: collapse;
-  color: #fff;
+  color: #111010;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #1f1f2e, #2d2d44);
+  background: linear-gradient(to right, #ededed, #f3f3f3);
 }
 .tabla-capsula thead {
-  background-color: #0f62fe;
+  background-color: #8db5ff;
 }
 .tabla-capsula th, .tabla-capsula td {
   padding: 15px 20px;
   text-align: left;
 }
 .tabla-capsula tbody tr {
-  border-bottom: 1px solid #3a3a5c;
+  border-bottom: 1px solid #4e4e79;
   transition: background 0.3s ease;
 }
 .tabla-capsula tbody tr:hover {
-  background-color: #0f62fe33;
+  background-color: #0c1e3f33;
   cursor: pointer;
 }
 
@@ -384,29 +363,11 @@ header{
   }
 }
 
-@keyframes flotacion {
-  0% {
-    transform: rotateX(2deg) rotateY(2deg) translateY(0px);
-  }
-  100% {
-    transform: rotateX(-2deg) rotateY(-2deg) translateY(-10px);
-  }
-}
-
-@keyframes brillar {
-  0%, 100% {
-    box-shadow: 0 0 8px #82cfff;
-  }
-  50% {
-    box-shadow: 0 0 20px #0f62fe;
-  }
-}
-
 /* --- ANIMACIÓN Clasificación de Riesgos Laborales --- */
 .titulo-flip {
   text-align: center;
   font-size: 2.5rem;
-  color: #0f62fe;
+  color: #000000;
   margin-bottom: 30px;
   animation: entradaArriba 1s ease forwards;
 }
@@ -432,7 +393,7 @@ header{
   backface-visibility: hidden;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(140, 140, 140, 0.3);
   transition: transform 0.8s;
   display: flex;
   flex-direction: column;
@@ -440,8 +401,8 @@ header{
 }
 
 .cara-delantera {
-  background: linear-gradient(135deg, #0f62fe, #82cfff);
-  color: white;
+  background: linear-gradient(135deg, #b0cbff, #bee6ff);
+  color: rgb(86, 62, 195);
   transform: rotateY(0deg);
 }
 
@@ -467,20 +428,12 @@ header{
   left: 0;
 }
 
-@keyframes entradaArriba {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
+
 /* --- ANIMACIÓN Ventajas y Retos --- */
 .titulo-vr {
   font-size: 2.5rem;
-  color: #0f62fe;
+  color: #000000;
   margin-bottom: 30px;
   animation: glowTitulo 1.5s ease-in-out infinite alternate;
 }
@@ -495,9 +448,9 @@ header{
 
 .tarjeta-vr {
   width: 320px;
-  background: linear-gradient(135deg, #666666, #0f62fe33);
+  background: linear-gradient(135deg, #eeeeee, #a4c4ff33);
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(134, 134, 134, 0.15);
   padding: 25px;
   transition: transform 0.3s ease;
   opacity: 0;
@@ -505,12 +458,12 @@ header{
 
 .tarjeta-vr:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(110, 110, 110, 0.25);
 }
 
 .tarjeta-vr h2 {
   text-align: center;
-  color: #0f62fe;
+  color: #000000;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -588,7 +541,7 @@ header{
   transform-style: preserve-3d;
   perspective: 1000px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  background: linear-gradient(90deg, #004884, #0074C7);
+  background: rgb(0, 0, 0);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -677,9 +630,6 @@ header{
   transform: perspective(800px) rotateY(5deg) rotateX(5deg) scale(1.05);
   transition: transform 0.5s ease;
 }
-
-
-
 
 /* SUBMENÚ dentro de Servicios */
 .menu nav ul li ul {

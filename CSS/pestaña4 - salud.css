@@ -283,12 +283,8 @@ article li {
   text-align: left;
 }
 
-.tabla-estilo-moderno tbody tr:nth-child(even) {
-  background-color: #f2f8fc;
-}
-
 .tabla-estilo-moderno tbody tr:hover {
-  background-color: #e0f0ff;
+  background-color: #f7fbff;
 }
 
 .lista-beneficios, .lista-dificultades {
@@ -373,8 +369,7 @@ article li {
   animation: revealZoom 1.5s ease-out forwards;
   opacity: 0;
   transform: scale(0.6) translateY(-50px);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  color: #0f3057;
+  color: #235898;
 }
 
 @keyframes revealZoom {
@@ -540,12 +535,12 @@ article li {
 
 .columna:hover {
   transform: scale(1.05);
-  color: #004884;
+  color: #000000;
 }
 
 .columna h3 {
   font-size: 20px;
-  color: #004884;
+  color: #44a3f1;
   margin-bottom: 10px;
 }
 

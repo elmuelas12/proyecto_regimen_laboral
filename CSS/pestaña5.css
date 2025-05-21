@@ -233,6 +233,343 @@ header{
   color: #000000;
 }
 /* Animaciones pertinentes blog */
+.tarjeta-riesgos {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f0f0f0, #e0e0ff);
+}
+
+.contenedor-tarjeta {
+  display: flex;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  padding: 30px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+  transform-style: preserve-3d;
+  max-width: 1000px;
+  cursor: pointer;
+}
+.contenedor-tarjeta:hover {
+  transform: rotateY(5deg) rotateX(3deg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.tarjeta-contenido {
+  max-width: 500px;
+  color: #2d2d2d;
+}
+.tarjeta-contenido h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #2f3e9e;
+  text-shadow: 1px 1px 0px #fff;
+  position: relative;
+}
+.tarjeta-contenido h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #ff5e5e;
+  animation: brilloLinea 2s infinite;
+}
+.tarjeta-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.tarjeta-imagen img {
+  width: 280px;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.tarjeta-riesgos:hover .tarjeta-imagen img {
+  transform: scale(1.05) rotate(1deg);
+}
+
+@keyframes brilloLinea {
+  0% {
+    box-shadow: 0 0 5px #ff5e5e;
+  }
+  50% {
+    box-shadow: 0 0 15px #ff5e5e;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff5e5e;
+  }
+}
+/* --- ANIMACIÓN Evolución de Fallos Laborales --- */
+.titulo-capsula {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0f62fe;
+  margin-bottom: 20px;
+  position: relative;
+  animation: entradaZoom 1s ease-in-out forwards;
+}
+.titulo-capsula::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0f62fe, #82cfff);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  border-radius: 2px;
+  animation: brillar 2s infinite;
+}
+
+.contenedor-capsula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  padding: 30px;
+}
+
+.caja-capsula {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  animation: flotacion 5s ease-in-out infinite alternate;
+  transform-style: preserve-3d;
+}
+
+.tabla-capsula {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1f1f2e, #2d2d44);
+}
+.tabla-capsula thead {
+  background-color: #0f62fe;
+}
+.tabla-capsula th, .tabla-capsula td {
+  padding: 15px 20px;
+  text-align: left;
+}
+.tabla-capsula tbody tr {
+  border-bottom: 1px solid #3a3a5c;
+  transition: background 0.3s ease;
+}
+.tabla-capsula tbody tr:hover {
+  background-color: #0f62fe33;
+  cursor: pointer;
+}
+
+@keyframes entradaZoom {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flotacion {
+  0% {
+    transform: rotateX(2deg) rotateY(2deg) translateY(0px);
+  }
+  100% {
+    transform: rotateX(-2deg) rotateY(-2deg) translateY(-10px);
+  }
+}
+
+@keyframes brillar {
+  0%, 100% {
+    box-shadow: 0 0 8px #82cfff;
+  }
+  50% {
+    box-shadow: 0 0 20px #0f62fe;
+  }
+}
+
+/* --- ANIMACIÓN Clasificación de Riesgos Laborales --- */
+.titulo-flip {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0f62fe;
+  margin-bottom: 30px;
+  animation: entradaArriba 1s ease forwards;
+}
+
+.contenedor-flip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.tarjeta {
+  width: 280px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.cara {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cara-delantera {
+  background: linear-gradient(135deg, #0f62fe, #82cfff);
+  color: white;
+  transform: rotateY(0deg);
+}
+
+.cara-trasera {
+  background: #fff;
+  color: #333;
+  transform: rotateY(180deg);
+  border: 2px dashed #0f62fe;
+}
+
+.tarjeta:hover .cara-delantera {
+  transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .cara-trasera {
+  transform: rotateY(0deg);
+}
+
+.tarjeta .cara-delantera,
+.tarjeta .cara-trasera {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes entradaArriba {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- ANIMACIÓN Ventajas y Retos --- */
+.titulo-vr {
+  font-size: 2.5rem;
+  color: #0f62fe;
+  margin-bottom: 30px;
+  animation: glowTitulo 1.5s ease-in-out infinite alternate;
+}
+
+.contenedor-vr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.tarjeta-vr {
+  width: 320px;
+  background: linear-gradient(135deg, #666666, #0f62fe33);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  padding: 25px;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.tarjeta-vr:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.tarjeta-vr h2 {
+  text-align: center;
+  color: #0f62fe;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tarjeta-vr ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tarjeta-vr ul li {
+  margin: 10px 0;
+  font-weight: 500;
+  color: #3f3331;
+  position: relative;
+  padding-left: 25px;
+}
+
+.tarjeta-vr ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #82cfff;
+  border-radius: 50%;
+  animation: pulso 1.8s infinite;
+}
+
+/* Animaciones */
+@keyframes animarIzquierda {
+  0% {transform: translateX(-100px); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes animarDerecha {
+  0% {transform: translateX(100px); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+
+.animar-entrada-izquierda {
+  animation: animarIzquierda 1s ease-out forwards;
+}
+
+.animar-entrada-derecha {
+  animation: animarDerecha 1s ease-out forwards;
+}
+
+@keyframes pulso {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes glowTitulo {
+  from { text-shadow: 0 0 10px #82cfff; }
+  to { text-shadow: 0 0 20px #0f62fe; }
+}
+
 /* --- ANIMACIÓN 3D REVEAL AVANZADA CON CSS3 --- */
 @keyframes flipIn {
   0% {

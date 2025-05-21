@@ -266,8 +266,46 @@ article ol, ul{
     height: 10%;
 }
 
+img {
+  animation: bounceIn 1.5s ease;
+}
+
+@keyframes bounceIn {
+  0% { transform: translateY(-200px); opacity: 0; }
+  60% { transform: translateY(30px); opacity: 1; }
+  80% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 .text_lado {
     width: 70%; 
+}
+/* animaciones */
+.container-content h1 {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.container-content p, .container-content li, .container-content td {
+  animation: fadeIn 1.5s ease-in;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Columnas */
@@ -301,6 +339,82 @@ article ol, ul{
     padding: 8px;
     text-align: center;
   }
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid transparent;
+  animation: drawBorder 2s forwards;
+  position: relative;
+}
+
+/* animar el borde */
+@keyframes drawBorder {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #007bff;
+  }
+}
+
+table th, table td {
+  border: 1px solid #007bff;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #e0f3ff;
+}
+table {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUpFade 1.5s forwards;
+}
+
+@keyframes slideUpFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+tbody tr:nth-child(odd) {
+  animation: softBlink 3s infinite;
+}
+
+@keyframes softBlink {
+  0%, 100% { background-color: white; }
+  50% { background-color: #e6f7ff; }
+}
+tbody tr {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: linear-gradient(90deg, #bec1c5, #595a5a, #9b9fa2);
+  background-size: 200% 100%;
+  animation: slideGradient 2s linear infinite;
+  color: white;
+}
+
+@keyframes slideGradient {
+  0% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
+}
+thead th {
+  animation: headerBlink 3s infinite;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+@keyframes headerBlink {
+  0%, 100% { background-color: #007bff; }
+  50% { background-color: #0056b3; }
+}
 
 /* Ventajas y Limitaciones */
 

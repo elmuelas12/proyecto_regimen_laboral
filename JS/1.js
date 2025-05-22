@@ -54,3 +54,21 @@ let currentIndex = 0;
 
   // Inicializa el carrusel en el primer ítem
   showItem(currentIndex);
+
+// Toggle para el menú principal en móviles
+  const iconMenu = document.getElementById("icon-menu");
+  const navList = document.querySelector(".menu nav ul");
+
+  iconMenu.addEventListener("click", () => {
+    navList.classList.toggle("active");
+  });
+
+  // Toggle para el submenú "Temas de Interés"
+  const submenu = document.querySelector(".submenu > a");
+  const submenuParent = document.querySelector(".submenu");
+
+  submenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    submenuParent.classList.toggle("open");
+  });
+  

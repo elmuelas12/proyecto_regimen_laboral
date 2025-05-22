@@ -738,3 +738,352 @@ footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram
     color: #313030;
     font-weight: 500;
 }
+/* ==== ESTILOS GENERALES HEADER ==== */
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bandera-Colombia {
+  display: none !important;
+}
+
+.menu {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.menu nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-x: visible;
+}
+
+/* Scrollbar del menú si se necesita */
+.menu nav ul::-webkit-scrollbar {
+  height: 6px;
+}
+.menu nav ul::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.menu nav ul li {
+  position: relative;
+  padding: 0;
+}
+
+.menu nav ul li > a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu nav ul li > a:hover {
+  background-color: #f0f0f0;
+}
+
+.menu nav ul li > a i {
+  margin-right: 6px;
+  font-size: 18px;
+  width: 18px;
+  text-align: center;
+}
+
+.menu nav ul li:has(ul) > a::after {
+  content: " ▼";
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+/* Submenú oculto por defecto (desktop) */
+.menu nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 1000;
+  padding: 8px 0;
+}
+
+/* Mostrar submenú al hover en desktop */
+.menu nav ul li:hover > ul {
+  display: flex;
+}
+
+.menu nav ul li ul li {
+  padding: 10px 20px;
+  white-space: nowrap;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.menu nav ul li ul li:last-child {
+  border-bottom: none;
+}
+
+.menu nav ul li ul li a {
+  color: #555;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu nav ul li ul li a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+  border-radius: 6px;
+}
+
+
+/* ==== ESTILOS RESPONSIVOS PARA PANTALLAS <= 991px ==== */
+@media screen and (max-width: 991px) {
+  /* Contenedor principal */
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* Logo a la izquierda */
+  .logo {
+    flex: 1;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  /* Ocultar bandera */
+  .bandera-Colombia {
+    display: none !important;
+  }
+
+  /* Contenedor menú */
+  .menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  /* Lista del menú principal: mostrar solo botones Temas de Interés y Contacto en fila */
+  .menu nav ul {
+    display: flex !important;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow-x: visible;
+  }
+
+  /* Scrollbar del menú si se necesita */
+  .menu nav ul::-webkit-scrollbar {
+    height: 6px;
+  }
+  .menu nav ul::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+  }
+
+  /* Cada item del menú principal sin padding */
+  .menu nav ul li {
+    position: relative;
+    padding: 0;
+  }
+
+  /* Estilos para los enlaces principales */
+  .menu nav ul li > a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .menu nav ul li > a:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Iconos a la izquierda del texto */
+  .menu nav ul li > a i {
+    margin-right: 6px;
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+  }
+
+  /* Flecha para indicar submenu en Temas de Interés */
+  .menu nav ul li:has(ul) > a::after {
+    content: " ▼";
+    font-size: 12px;
+    margin-left: 6px;
+  }
+
+  /* Submenú oculto por defecto (vertical, abajo del botón) */
+  .menu nav ul li ul {
+    display: none;
+    position: absolute; /* para que se superponga y no desplace elementos */
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 1000;
+    padding: 8px 0;
+  }
+
+  /* Mostrar submenú cuando tenga clase visible */
+  .menu nav ul li ul.visible {
+    display: flex !important;
+  }
+
+  /* Items del submenu */
+  .menu nav ul li ul li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .menu nav ul li ul li:last-child {
+    border-bottom: none;
+  }
+
+  /* Enlaces del submenu */
+  .menu nav ul li ul li a {
+    color: #555;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .menu nav ul li ul li a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    border-radius: 6px;
+  }
+}
+/* Evitar scroll horizontal en toda la página */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* No scroll horizontal */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Box sizing global para mejor control */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Footer centrado y con imagen centrada */
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #b9b8b8;
+  text-align: center; /* Centra el contenido dentro del footer */
+}
+/* Responsive para móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .imagen_y_texto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen_y_texto img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .text_lado {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+/* Responsive para que el texto se muestre completo y centrado */
+@media (max-width: 768px) {
+  .contenedor.animado-container {
+    animation: none !important;
+    transition: none !important;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+/* Animación por defecto (puede ser algo como parpadeo, movimiento, etc.) */
+.animado-container {
+  animation: tuAnimacion 3s infinite;
+}
+
+/* En pantallas pequeñas (ejemplo: hasta 768px) quitamos la animación para ese contenedor */
+@media (max-width: 768px) {
+  .animado-container {
+    animation: none !important; /* Desactiva cualquier animación */
+  }
+}
+/* SOLO RESPONSIVE - no modificar diseño desktop */
+@media (max-width: 600px) {
+  .contenido_tabla {
+    grid-template-columns: 1fr; /* cambia a una sola columna */
+  }
+  .celda {
+    border-bottom: none;
+    padding: 0;
+  }
+  .imagen_celda img {
+    width: 150px;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+  .texto_celda p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+/* Opcional: evita elementos con ancho fijo que causen scroll horizontal */
+body > * {
+  max-width: 100vw;
+}
+
+/* Si usas flexbox en contenedores, permite que envuelvan */
+.flex-container, .header-content, .menu {
+  flex-wrap: wrap;
+}

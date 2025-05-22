@@ -32,54 +32,48 @@
         </a>
 
         <!-- Lista de enlaces -->
-        <ul>
-          <!-- Servicios con submenú -->
-          <li>
-            <a href="#">Temas de Interes</a>
-            <ul>
-              <li>
-                <a href="../index.html">
-                  <i class=""></i> Inicio
-                </a>
-              </li>
-              <li>
-                <a href="pestaña1.html">
-                  <i class="fa-light fa-scale-balanced"></i> Jurisprudencia
-                </a>
-              </li>
-              <li>
-                <a href="pestaña2.html">
-                  <i class=""></i> Información clave
-                </a>
-              </li>
-              <li>
-                <a href="pestaña5.html">
-                  <i class="fa-light fa-scale-balanced"></i> Riesgos laborales
-                </a>
-              </li>
-              <li>
-                <a href="pestaña3.html">
-                  <i class=""></i> Pensiones
-                </a>
-              </li>
-            </ul>
-          </li>
+<ul class="menu-list">
+  <!-- Temas de Interés con submenú -->
+  <li class="has-submenu">
+    <a href="#" class="submenu-toggle" role="button" aria-expanded="false" aria-controls="submenu-temas">Temas de Interés</a>
+  <ul id="submenu-temas" class="submenu">
+      <li>
+        <a href="../index.html">
+          <i class="fa-light fa-scale-balanced"></i> Inicio
+        </a>
+      </li>
+      <li>
+        <a href="pestaña2.html">
+          <i class="fas fa-file-alt"></i> Información clave
+        </a>
+      </li>
+      <li>
+        <a href="pestaña5.html">
+          <i class="fa-light fa-scale-balanced"></i> Riesgos laborales
+        </a>
+      </li>
+      <li>
+        <a href="pestaña3.html">
+          <i class="fas fa-file-alt"></i> Pensiones
+        </a>
+      </li>
+      <li>
+        <a href="pestaña1.html">
+          <i class="fas fa-file-alt"></i> Jurisprudencia
+        </a>
+      </li>
+    </ul>
+  </li>
 
-          <!-- Contacto -->
-          <li>
-            <a href="#contactos">
-              <i class=""></i> Contacto
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  <!-- Contacto -->
+  <li>
+    <a href="#contactos">
+      <i class="fas fa-headset"></i> Contacto
+    </a>
+  </li>
+</ul>
 
-  <!-- Icono menú hamburguesa -->
-  <div id="icon-menu">
-    <i class="fas fa-bars"></i>
-  </div>
+
 </header>
 
     <!--Blog-->
@@ -115,7 +109,10 @@
 <br><br>
 <!-- Sistema de Salud y Jurisprudencia -->
 <div class="contenedor animado-container">
-  <h2 class="titulo-animado impacto-titulo" style="color: #000000;">Sistema de Salud y Jurisprudencia</h2>
+  <h2 style="color: #000000; font-weight: bold; font-size: 2rem; margin: 0;">
+    Sistema de Salud y Jurisprudencia
+  </h2>
+</div>
 
   <p class="parrafo-centrado fade-in">La jurisprudencia en salud interpreta leyes para garantizar acceso, calidad y protección del derecho a la salud...</p>
 

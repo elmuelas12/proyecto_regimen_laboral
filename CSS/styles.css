@@ -629,3 +629,89 @@ footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram
     height: auto;
     transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 991px) {
+
+  .header-content, .menu nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  #icon-menu {
+    display: flex;
+  }
+
+  #icon-menu.active + .menu nav ul {
+    display: flex;
+  }
+
+  .menu nav ul li {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 20px;
+  }
+
+  .container-content {
+    flex-direction: column;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .imagen_y_texto {
+    flex-direction: column;
+  }
+
+  .imagen_y_texto img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text_lado {
+    width: 100%;
+  }
+
+  .contenedor-columnas,
+  .contenedor-ventajas-limitaciones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .columna {
+    width: 100% !important;
+    min-width: unset;
+  }
+
+  .tabla-container,
+  .tabla-animada,
+  .tabla-estilo-moderno,
+  .tabla-comparativa,
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  article {
+    padding: 10px;
+  }
+
+  .caso-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .caso-box img {
+    width: 100%;
+    height: auto;
+  }
+}

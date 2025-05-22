@@ -408,26 +408,34 @@ thead th {
 
 /* Ventajas y Limitaciones */
 
+/*--------------------- Beneficios vs Limitaciones del Sistema Pensional ---------------------*/
 .contenedor-ventajas-limitaciones {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap; /* para que se acomode en pantallas pequeñas */
-    margin-top: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 40px 30px; /* Espacio interior amplio */
+  max-width: 1000px;
+  margin: 40px auto; /* Separación vertical del resto de la página */
+  flex-wrap: wrap;
+  background-color: #f9f9f9; /* Opcional: color claro de fondo para el cuadro */
+  border-radius: 12px; /* Bordes redondeados del cuadro */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-sizing: border-box;
+}
 
-  .columna {
-    flex: 1;
-    min-width: 300px;
-    padding: 5px;
-  }
+.columna {
+  flex: 1 1 300px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white; /* Fondo blanco limpio para cada columna */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Ligera sombra para separar */
+  box-sizing: border-box;
+}
 
-  .separador {
-    width: 1px;
-    background-color: #000;
-    height: auto;
-  }
+
+
+
 
   ul {
     list-style-type: disc;

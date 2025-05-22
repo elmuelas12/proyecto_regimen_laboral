@@ -430,98 +430,30 @@ header{
 
 
 
-/* --- ANIMACIÓN Ventajas y Retos --- */
-.titulo-vr {
-  font-size: 2.5rem;
-  color: #000000;
-  margin-bottom: 30px;
-  animation: glowTitulo 1.5s ease-in-out infinite alternate;
-}
 
-.contenedor-vr {
+/*--------------------- Ventajas y Retos Riesgos labalorales ---------------------*/
+.contenedor-ventajas-limitaciones {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  padding: 20px;
+  gap: 20px;
+  padding: 10px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.tarjeta-vr {
-  width: 320px;
-  background: linear-gradient(135deg, #eeeeee, #a4c4ff33);
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(134, 134, 134, 0.15);
-  padding: 25px;
-  transition: transform 0.3s ease;
-  opacity: 0;
+.columna {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.tarjeta-vr:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(110, 110, 110, 0.25);
+.separador {
+  width: 2px;
+  margin: 0 10px;
 }
 
-.tarjeta-vr h2 {
-  text-align: center;
-  color: #000000;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.tarjeta-vr ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.tarjeta-vr ul li {
-  margin: 10px 0;
-  font-weight: 500;
-  color: #3f3331;
-  position: relative;
-  padding-left: 25px;
-}
-
-.tarjeta-vr ul li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 12px;
-  height: 12px;
-  background-color: #82cfff;
-  border-radius: 50%;
-  animation: pulso 1.8s infinite;
-}
-
-/* Animaciones */
-@keyframes animarIzquierda {
-  0% {transform: translateX(-100px); opacity: 0;}
-  100% {transform: translateX(0); opacity: 1;}
-}
-
-@keyframes animarDerecha {
-  0% {transform: translateX(100px); opacity: 0;}
-  100% {transform: translateX(0); opacity: 1;}
-}
-
-.animar-entrada-izquierda {
-  animation: animarIzquierda 1s ease-out forwards;
-}
-
-.animar-entrada-derecha {
-  animation: animarDerecha 1s ease-out forwards;
-}
-
-@keyframes pulso {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.3); opacity: 0.5; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-@keyframes glowTitulo {
-  from { text-shadow: 0 0 10px #82cfff; }
-  to { text-shadow: 0 0 20px #0f62fe; }
-}
 
 /* --- ANIMACIÓN 3D REVEAL AVANZADA CON CSS3 --- */
 @keyframes flipIn {

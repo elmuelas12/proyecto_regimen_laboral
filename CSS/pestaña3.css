@@ -724,14 +724,15 @@ body > * {
 .flex-container, .header-content, .menu {
   flex-wrap: wrap;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .imagen_y_texto.animar-in.animar-dos {
-    display: block; /* vertical */
+    display: block;
     text-align: center;
   }
 
   .imagen_y_texto.animar-in.animar-dos img {
-    width: 150px;
+    max-width: 90%;
     margin: 0 auto 1rem auto;
     display: block;
   }
@@ -742,6 +743,7 @@ body > * {
     max-width: 90%;
   }
 }
+
 /* Aquí va todo tu responsive ya existente */
 @media screen and (max-width: 991px) {
   /* --- Tu código responsive --- */

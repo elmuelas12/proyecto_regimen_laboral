@@ -1044,22 +1044,27 @@ footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram
   }
   
 }
-@media (max-width: 600px) {
-  .imagen_y_texto {
-    display: block; /* cambia flex a block para que todo quede vertical */
-    text-align: center; /* centra texto */
+@media screen and (max-width: 768px) {
+  .imagen_y_texto.wow-reveal.retraso-2 {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
 
-  .imagen_y_texto img {
-    width: 150px; /* reduce el tamaño de la imagen */
-    margin: 0 auto 1rem auto; /* centra la imagen y agrega espacio abajo */
-    display: block;
-  }
-
-  .text_lado p {
-    font-size: 1rem;
-    margin: 0 auto;
+  .imagen_y_texto.wow-reveal.retraso-2 img {
     max-width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px; /* opcional para estilo más suave */
+  }
+
+  .imagen_y_texto.wow-reveal.retraso-2 .text_lado p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 /* Evitar scroll horizontal en toda la página */

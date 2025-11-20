@@ -516,7 +516,7 @@ footer .redes-footer--left .fa-instagram:hover,.redes-footer--left .fa-instagram
     font-weight: 500;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 600px) {
   /* Contenedor principal */
   .header-content {
     flex-direction: row;
@@ -691,6 +691,32 @@ body > * {
 /* Si usas flexbox en contenedores, permite que envuelvan */
 .flex-container, .header-content, .menu {
   flex-wrap: wrap;
+}
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .imagen_y_texto {
+    flex-direction: row; /* Lado a lado en tablet */
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .img-container {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .text_lado {
+    flex: 1;
+    font-size: 17px;
+    padding: 0 15px;
+  }
 }
 
 /* Aquí va todo tu responsive ya existente */

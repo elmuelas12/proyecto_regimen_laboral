@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo paginas segundarias/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <link rel="stylesheet" href="../CSS/pestaña1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header - Menú principal -->
+<header>
+  <div class="header-content">
+
+    <!-- Logo -->
+    <div class="logo">
+      <h1>lega<b>lab</b></h1>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="menu" id="show-menu">
+      <nav>
+
+        <!-- Imagen / Escudo -->
+        <a href="#">
+          <img 
+            src="../img/imagen_2025-05-01_075718321-removebg-preview.png" 
+            alt="escudo de Colombia" 
+            class="bandera-Colombia"
+          >
+        </a>
+
+        <!-- Lista de enlaces -->
+        <ul>
+
+          <!-- Servicios con submenú -->
+          <li>
+            <a href="#">Temas de interes</a>
+            <ul>
+              <li>
+                <a href="../index.html">
+                  <i class="fa-light fa-scale-balanced"></i> Inicio
+                </a>
+              </li>
+              <li>
+                <a href="pestaña1.html">
+                  <i class="fas fa-file-alt"></i> Jurisprudencia
+                </a>
+              </li>
+             <li>
+                <a href="pestaña2.html">
+                <i class="fas fa-file-alt"></i> Información clave
+                 </a>
+             </li>
+              <li>
+                <a href="pestaña3.html">
+                  <i class="fas fa-file-alt"></i> Pensiones
+                </a>
+              </li>
+              <li>
+                <a href="pestaña5.html">
+                  <i class="fas fa-file-alt"></i> Riesgos Laborales
+                </a>
+              </li>
+              <li>
+                <a href="pestaña4-salud.html">
+                  <i class="fas fa-file-alt"></i> Salud
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Contacto -->
+          <li>
+            <a href="#contactos">
+              <i class="fas fa-headset"></i> Contacto
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <!-- Icono menú hamburguesa -->
+  <div id="icon-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+<br><br><br>
+
+    <!--Blog-->
+    <div class="container-content">
+        <article>
+            <!-- INICIO: TABLAS RIESGOS POR PROFESIÓN (AISLADO) -->
+<section class="riesgos-wrapper">
+
+  <h2 class="riesgos-main-title"><b>Riesgos Laborales  Análisis por Profesión</b></h2>
+  
+  <!-- Cada .riesgos-card corresponde a una profesión -->
+  <!-- 1) Ingeniería Informática -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Ingeniería Informática
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Ergonomía deficiente, exposición prolongada a pantallas, carga mental, cables y equipos eléctricos.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Biomecánico, Físico (visual), Psicosocial, Eléctrico</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Síndrome del túnel carpiano, tendinitis, lumbalgia, Síndrome Visual Informático, estrés crónico / burnout, contacto eléctrico, incendios.</td></tr>
+          <tr><th>Probabilidad</th><td>Alta (sedentarismo y horas frente a pantalla)</td></tr>
+          <tr><th>Severidad</th><td>Biomecánico: Media/Grave; Visual: Leve/Media; Psicosocial: Grave</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico / Moderado (según factor)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Las LME (lesiones musculo-esqueléticas) son causa principal de ausentismo en servicios informáticos.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Eliminación/Sustitución:</b> Automatizar tareas repetitivas.<br>
+              <b>Ingeniería:</b> Mobiliario ergonómico, soportes de monitor, filtros de luz azul, iluminación adecuada.<br>
+              <b>Administrativos:</b> Pausas activas, regla 20-20-20, horario y desconexión digital.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>No aplica generalmente (salvo guantes dieléctricos o calzado para trabajo en servidores).</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Exámenes osteomusculares, optometría anual/bianual, encuestas psicosociales, seguimiento de síntomas tempranos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 2) Derecho -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Derecho
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Carga documental, litigios, situaciones de conflicto, largas jornadas, amenazas en casos sensibles.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Biomecánico, Seguridad pública, Visual</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Estrés grave, burnout, insomnio, ansiedad, lumbalgia, lesiones por agresión, trauma psicológico.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta en litigantes; Seguridad pública: variable según contexto</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial: Grave; Seguridad: Mortal/Incapacitante (casos extremos)</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico (psicosocial), Alto (seguridad en contextos sensibles)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Altas tasas de estrés y trastornos de ansiedad en abogados litigantes según estudios del sector.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Eliminación/Sustitución:</b> Expediente digital para reducir cargas físicas.<br>
+              <b>Ingeniería:</b> Iluminación y mobiliario ergonómico.<br>
+              <b>Administrativos:</b> Protocolos de seguridad, rotación, pausas activas, gestión del tiempo.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>No aplica en oficina; en contextos de riesgo: chalecos antibalas, medios de comunicación seguros.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Encuestas psicosociales, apoyo psicológico, exámenes osteomusculares, optometría.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3) Contaduría Pública -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Contaduría Pública
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Temporadas de cierre fiscal, revisión intensiva de documentos, manipulación de archivos, desplazamientos.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Biomecánico, Visual, Tránsito</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Burnout, trastornos musculo-esqueléticos, fatiga visual, accidentes de tránsito.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta en temporadas; Biomecánico: Alta</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial: Grave; Tránsito: Puede ser Mortal</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico (psicosocial), Moderado/Alto (biomecánico)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Incremento de bajas por estrés en temporadas fiscales.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Eliminación/Sustitución:</b> Gestión documental electrónica.<br>
+              <b>Ingeniería:</b> Mobiliario ergonómico, aislamiento en áreas ruidosas.<br>
+              <b>Administrativos:</b> Políticas de balance vida-trabajo, pausas activas, capacitación en conducción defensiva.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>Generalmente no; mascarillas básicas si hay ambientes polvorientos.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Encuestas psicosociales, exámenes osteomusculares, optometría.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 4) Ciencias Aeronáuticas -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Ciencias Aeronáuticas
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Turnos irregulares, ruido de turbinas, alta responsabilidad operativa, exposición a combustibles y solventes.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Físico (ruido/vibración), Químico, Seguridad operacional</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Fatiga, burnout, hipoacusia, intoxicación, accidentes con consecuencias catastróficas.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta; Operacional: Baja (pero impacto alto)</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial/Operacional: Grave/Mortal</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico (operacional y humano)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>La fatiga contribuye a un porcentaje significativo de incidentes aéreos registrados en investigaciones.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Eliminación:</b> Sistemas de apoyo a la decisión; automatización donde aplique.<br>
+              <b>Ingeniería:</b> Aislamiento acústico, ventilación, señalización y barreras.<br>
+              <b>Administrativos:</b> Regulaciones FTL, checklists, simulacros, CRM/TEM.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>Protección auditiva, guantes resistentes, monogafas, chalecos reflectantes, calzado de seguridad.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Exámenes psicofísicos periódicos, audiometrías, pruebas aleatorias de drogas y alcohol, controles cardíacos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 5) Administración Aeronáutica -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Administración Aeronáutica
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Gestión 24/7, presión financiera/operativa, viajes y auditorías regulatorias.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Ergonómico, Físico (viajes), Legal/Reputacional</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Burnout, lumbalgia, trastornos del sueño, sanciones legales y pérdida de licencia.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta en gerencia; Viajes: frecuente</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial/Legal: Grave</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico (gerencial), Moderado/Alto (ergonómico)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Alta rotación y burnout en cargos directivos del sector aéreo y logístico.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Eliminación/Sustitución:</b> Sistemas BI y ERP para reducir trabajo manual.<br>
+              <b>Ingeniería:</b> Mobiliario ergonómico premium, iluminación adecuada.<br>
+              <b>Administrativos:</b> Protocolos de doble verificación, planes de contingencia, pausas activas.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>No aplica en oficina; en visitas a plataforma: chaleco y protección auditiva.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Encuestas psicosociales, chequeos cardiovasculares, exámenes osteomusculares.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 6) Administración de Empresas -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Administración de Empresas
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Presión por resultados, liderazgo, reuniones extensas, viajes corporativos.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Biomecánico, Visual, Viajes</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Estrés crónico, lumbalgia, fatiga visual, accidente en desplazamientos.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta; Biomecánico: Alta</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial: Grave; Tránsito: Variable</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico (psicosocial), Moderado/Alto (ergonomía)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Ejecutivos y mandos medios reportan mayor prevalencia de síntomas relacionados con estrés.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Eliminación/Sustitución:</b> Software de gestión y dashboards.<br>
+              <b>Ingeniería:</b> Escritorios sit/stand, sillas ajustables.<br>
+              <b>Administrativos:</b> Políticas de desconexión, distribución de carga de trabajo, pausas activas.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>No aplica.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Encuestas psicosociales, exámenes osteomusculares, chequeos cardiovasculares.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 7) Negocios Internacionales -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Negocios Internacionales
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Viajes frecuentes, diferencias horarias, negociaciones complejas, exposición a entornos inseguros.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Ergonómico, Seguridad pública/vial, Visual</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Burnout, trastornos del sueño, lumbalgia, accidentes, enfermedades infecciosas.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta en roles con viajes</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial: Grave; Seguridad: puede ser Mortal</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico/Alto según destino y frecuencia de viajes</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Altas tasas de estrés y burnout en profesionales con agendas internacionales exigentes.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Ingeniería:</b> Mobiliario ergonómico en oficinas.<br>
+              <b>Administrativos:</b> Políticas de desconexión, protocolos de seguridad de viaje, gestión de jet-lag.<br>
+              <b>Eliminación:</b> Reducir viajes innecesarios con herramientas virtuales.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>No aplica en oficina; en zonas de riesgo: medidas de protección según contexto.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Encuestas psicosociales, exámenes de aptitud general, optometría y controles osteomusculares.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 8) Ingeniería Aeronáutica -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Ingeniería Aeronáutica
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Trabajo en hangares, herramientas eléctricas, trabajo en altura, exposición a combustibles y materiales compuestos.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Ergonómico, Físico (ruido/vibración), Químico, Seguridad operacional</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Lesiones graves, hipoacusia, dermatitis, intoxicación, trastornos músculo-esqueléticos.</td></tr>
+          <tr><th>Probabilidad</th><td>Probabilidad variable: tareas de mantenimiento elevan exposición</td></tr>
+          <tr><th>Severidad</th><td>Puede ser Grave/Mortal según la tarea</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Moderado/Alto a Crítico en tareas de mantenimiento</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Exposición a químicos requiere registros y seguimiento médico riguroso.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Ingeniería:</b> Ventilación forzada, barandas, equipos de izaje, diseño ergonómico de herramientas.<br>
+              <b>Administrativos:</b> Permisos de trabajo, listas de chequeo, rotación de personal en áreas de ruido/químicos.<br>
+              <b>Eliminación:</b> Sustitución de compuestos por alternativas menos peligrosas cuando sea posible.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>Casco, gafas, protección auditiva, guantes nitrilo/neopreno, respiradores, calzado de seguridad, arneses para alturas.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Audiometrías, pruebas de laboratorio (hepático/renal), exámenes osteomusculares, evaluaciones psicofísicas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 9) Ingeniería Industrial -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Ingeniería Industrial
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Supervisión de plantas, maquinaria en movimiento, ruido, vibraciones, manipulación de cargas, turnos.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Biomecánico, Mecánico/Tránsito, Físico</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Atropellamientos, atrapamientos, pérdida auditiva, lesiones musculo-esqueléticas, estrés.</td></tr>
+          <tr><th>Probabilidad</th><td>Varía según controles; puede ser Media/Alta en planta</td></tr>
+          <tr><th>Severidad</th><td>Media a Mortal en accidentes graves</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Alto/Crítico en ausencia de controles</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Accidentes con maquinaria y colisiones con montacargas son causas significativas de lesiones graves.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Ingeniería:</b> Guardas, LOTO, aislamiento acústico, señalización.<br>
+              <b>Administrativos:</b> Capacitación, rotación, procedimientos seguros, simulacros.<br>
+              <b>Eliminación:</b> Automatización de tareas peligrosas.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>Casco, calzado con puntera, gafas, protección auditiva, guantes, chalecos reflectantes.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Audiometrías, exámenes osteomusculares, encuestas psicosociales.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 10) Economía -->
+  <div class="riesgos-card">
+    <button class="riesgos-card-header" aria-expanded="false">
+      Economía
+      <span class="riesgos-arrow"></span>
+    </button>
+    <div class="riesgos-card-body">
+      <table class="riesgos-table">
+        <tbody>
+          <tr><th>Factor de Riesgo (Agente)</th><td>Presión por resultados financieros, largas jornadas, sedentarismo, manejo de información sensible.</td></tr>
+          <tr><th>Tipo de Riesgo</th><td>Psicosocial, Ergonómico, Visual, Seguridad (tránsito/fraude)</td></tr>
+          <tr><th>Consecuencia Potencial</th><td>Burnout, trastornos cardiovasculares, lumbalgia, fatiga visual, riesgos viales y reputacionales.</td></tr>
+          <tr><th>Probabilidad</th><td>Psicosocial: Alta; Ergonomía: Alta</td></tr>
+          <tr><th>Severidad</th><td>Psicosocial: Grave; Tránsito/Fraude: Grave/Mortal</td></tr>
+          <tr><th>Nivel de Riesgo</th><td>Crítico (psicosocial/legales), Moderado/Alto (ergonómico)</td></tr>
+          <tr><th>Estadísticas / Datos</th><td>Altas exigencias en finanzas relacionan con tasas elevadas de estrés y burnout.</td></tr>
+          <tr><th>Jerarquía de Control</th>
+            <td>
+              <b>Ingeniería:</b> Mobiliario ergonómico, filtros de luz azul.<br>
+              <b>Administrativos:</b> Políticas de desconexión, pausas activas, formación en ética y seguridad de la información.<br>
+              <b>Eliminación:</b> Automatización y sistemas de control de fraude.
+            </td>
+          </tr>
+          <tr><th>EPP</th><td>No aplica en oficina.</td></tr>
+          <tr><th>Vigilancia de la Salud</th><td>Encuestas psicosociales, exámenes osteomusculares, optometría, controles de salud cardiovascular.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+<!-- FIN: TABLAS RIESGOS POR PROFESIÓN (AISLADO) -->
+
+
+
+
+    <div class="container-footer">	
+        <footer id="contactos">
+            <div class="logo-footer">
+                <a href=""><img src="../img/WhatsApp_Image_2025-04-15_at_10.22.32_AM-removebg-preview.png" alt=""></a>
+            </div>
+
+            <!-- Contenedor de redes sociales alineado a la izquierda -->
+            <div class="redes-footer-wrapper">
+            <div class="redes-footer redes-footer--left">
+            <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+            <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+
+            <!-- Contenedor de redes sociales alineado a la derecha -->
+            <div class="redes-footer redes-footer--right">
+            <a href="#"><i class="fa-brands fa-threads icon-redes-footer"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok icon-redes-footer"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter icon-redes-footer"></i></a>
+            </div>
+            </div>  
+            <hr>
+            <h4>© 2025 legalab - Todos los Derechos Reservados al Estado Colombiano</h4>
+        </footer>
+    </div>
+<script>
+  (function(){
+    // aislamiento por clase para evitar conflictos globales
+    const wrapper = document.querySelector('.riesgos-wrapper');
+    if (!wrapper) return;
+
+    const cards = wrapper.querySelectorAll('.riesgos-card');
+    cards.forEach(card => {
+      const header = card.querySelector('.riesgos-card-header');
+      header.addEventListener('click', () => {
+        const isOpen = card.classList.contains('open');
+        // si prefieres permitir multiples abiertos, comentar la siguiente bloque
+        // close others:
+        cards.forEach(c => { if (c !== card) { c.classList.remove('open'); c.querySelector('.riesgos-card-body').style.display = 'none'; c.querySelector('.riesgos-card-header').setAttribute('aria-expanded','false'); } });
+        if (!isOpen) {
+          card.classList.add('open');
+          card.querySelector('.riesgos-card-body').style.display = 'block';
+          header.setAttribute('aria-expanded','true');
+        } else {
+          card.classList.remove('open');
+          card.querySelector('.riesgos-card-body').style.display = 'none';
+          header.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+
+    // open/close all
+    const btnOpenAll = wrapper.querySelector('.riesgos-open-all');
+    const btnCloseAll = wrapper.querySelector('.riesgos-close-all');
+    btnOpenAll && btnOpenAll.addEventListener('click', () => {
+      cards.forEach(c => { c.classList.add('open'); c.querySelector('.riesgos-card-body').style.display = 'block'; c.querySelector('.riesgos-card-header').setAttribute('aria-expanded','true'); });
+    });
+    btnCloseAll && btnCloseAll.addEventListener('click', () => {
+      cards.forEach(c => { c.classList.remove('open'); c.querySelector('.riesgos-card-body').style.display = 'none'; c.querySelector('.riesgos-card-header').setAttribute('aria-expanded','false'); });
+    });
+
+    // Initial: keep all closed (good for performance)
+  })();
+</script>
+
+<script src="../JS/1.js"></script>
+
+</body>
+</html>

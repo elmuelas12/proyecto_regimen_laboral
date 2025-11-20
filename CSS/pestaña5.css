@@ -730,6 +730,38 @@ article li {
     }
 
     
+  .boton-riesgos-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-riesgos {
+  display: inline-block;
+  background: #0056d6;
+  color: white;
+  padding: 30px 45px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-riesgos:hover {
+  background: #003e99;
+  transform: scale(1.05);
+}
+
+.texto-riesgos-info {
+  text-align: center;
+  font-size: 34px; /* un poquito más grande */
+  margin-bottom: 17px;
+  color: #333;
+  font-weight: 500;
+}
+
+
+
 /*--------------------- IMAGEN Y TEXTO LATERAL ---------------------*/
 .imagen_y_texto {
     display: flex;

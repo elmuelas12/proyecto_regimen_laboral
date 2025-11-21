@@ -404,6 +404,33 @@
 </section>
 <!-- FIN: TABLAS RIESGOS POR PROFESIÓN (AISLADO) -->
 
+<!-- ======================= CALCULADORA DE PENSIONES ======================= -->
+<div class="calculadora-container">
+  <h2 class="calculadora-titulo">🧮 Calculadora de Pensión en Colombia</h2>
+  <p class="calculadora-descripcion">Ingresa tus datos para estimar tu posible pensión según el régimen actual.</p>
+
+  <div class="calculadora-box">
+    <label>Edad actual:</label>
+    <input type="number" id="edad" placeholder="Ej: 30">
+
+    <label>Semanas cotizadas:</label>
+    <input type="number" id="semanas" placeholder="Ej: 500">
+
+    <label>Salario mensual (COP):</label>
+    <input type="number" id="salario" placeholder="Ej: 2.000.000">
+
+    <label>Sexo:</label>
+    <select id="sexo">
+      <option value="M">Hombre</option>
+      <option value="F">Mujer</option>
+    </select>
+
+    <button onclick="calcularPension()" class="btn-calcular">Calcular mi pensión</button>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+</div>
+
 
 
 
@@ -471,6 +498,75 @@
     // Initial: keep all closed (good for performance)
   })();
 </script>
+<script>
+function calcularPension() {
+
+  let edad = parseInt(document.getElementById("edad").value);
+  let semanas = parseInt(document.getElementById("semanas").value);
+  let salario = parseInt(document.getElementById("salario").value);
+  let sexo = document.getElementById("sexo").value;
+  let salida = document.getElementById("resultado");
+
+  if (!edad || !semanas || !salario) {
+    salida.style.display = "block";
+    salida.innerHTML = "⚠️ Por favor completa todos los campos.";
+    return;
+  }
+
+  // Requisitos legales
+  let semanasRequeridas = 1300;
+  let edadRequerida = sexo === "M" ? 62 : 57;
+
+  // Cálculo de faltantes
+  let semanasFaltantes = Math.max(0, semanasRequeridas - semanas);
+  let edadFaltante = Math.max(0, edadRequerida - edad);
+
+  // Tiempo estimado para llegar a las semanas (basado en 50 semanas al año)
+  let añosParaSemanas = (semanasFaltantes / 50).toFixed(1);
+
+  // IBL aproximado (salario promedio)
+  let ibl = salario * 0.9; // valor más realista que usar 100%
+
+  // Porcentaje base (65%) + 0.02% por semana extra
+  let porcentajeBase = 0.65;
+  let adicional = Math.max(0, semanas - semanasRequeridas) * 0.0002;
+  if (adicional > 0.20) adicional = 0.20; // topo del 20%
+
+  let porcentajeFinal = porcentajeBase + adicional;
+
+  // Pensión estimada
+  let pensionEstim = ibl * porcentajeFinal;
+
+  // Pensión mínima y máxima por ley
+  let pensionMin = 1 * 1300000; // salario mínimo ejemplo
+  let pensionMax = 25 * 1300000;
+
+  if (pensionEstim < pensionMin) pensionEstim = pensionMin;
+  if (pensionEstim > pensionMax) pensionEstim = pensionMax;
+
+  salida.style.display = "block";
+  salida.innerHTML = `
+    <h3>📌 Requisitos para Pensión</h3>
+    - Edad requerida: <b>${edadRequerida} años</b><br>
+    - Semanas requeridas: <b>${semanasRequeridas}</b><br><br>
+
+    <h3>📊 Análisis de tu situación</h3>
+    Edad actual: <b>${edad}</b> años<br>
+    Semanas cotizadas: <b>${semanas}</b><br>
+    Semanas faltantes: <b>${semanasFaltantes}</b><br>
+    Años faltantes por semanas: <b>${añosParaSemanas}</b><br>
+    Años faltantes por edad: <b>${edadFaltante}</b><br><br>
+
+    <h3>💵 Cálculo Económico</h3>
+    IBL estimado: <b>$${ibl.toLocaleString("es-CO")}</b><br>
+    Porcentaje de liquidación: <b>${(porcentajeFinal*100).toFixed(2)}%</b><br>
+    Tu pensión estimada sería: <b>$${pensionEstim.toLocaleString("es-CO")}</b> COP mensuales.<br><br>
+
+    <i>Este cálculo es aproximado e informativo, basado en las reglas generales de Colpensiones.</i>
+  `;
+}
+</script>
+
 
 <script src="../JS/1.js"></script>
 

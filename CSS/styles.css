@@ -422,13 +422,13 @@ details[open] summary::before {
 
 .container-footer{
     width: 100%;
-    padding: 40px 0;
+    padding: 15px 0;
     background: #b9b8b8;
     margin-top: 40px;
 }
 
 .container-footer footer{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -662,13 +662,7 @@ html, body {
   box-sizing: inherit;
 }
 
-/* Footer centrado y con imagen centrada */
-footer {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #b9b8b8;
-  text-align: center; /* Centra el contenido dentro del footer */
-}
+
 
 footer img {
   display: block;

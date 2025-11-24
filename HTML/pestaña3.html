@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../CSS/pestaña3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 <header>
   <div class="header-content">
@@ -18,168 +17,254 @@
       <h1>lega<b>lab</b></h1>
     </div>
 
-    <!-- Menú -->
+    <!-- Menú de navegación -->
     <div class="menu" id="show-menu">
       <nav>
+
+        <!-- Imagen / Escudo -->
         <a href="#">
-          <img src="../img/imagen_2025-05-01_075718321-removebg-preview.png" class="bandera-Colombia">
+          <img 
+            src="../img/imagen_2025-05-01_075718321-removebg-preview.png" 
+            alt="escudo de Colombia" 
+            class="bandera-Colombia"
+          >
         </a>
 
-        <ul class="menu-list">
-          <li class="has-submenu">
-            <a href="#" class="submenu-toggle">Temas de Interés</a>
-            <ul class="submenu">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="pestaña2.html">Información clave</a></li>
-              <li><a href="pestaña5.html">Riesgos laborales</a></li>
-              <li><a href="pestaña1.html">Jurisprudencia</a></li>
-              <li><a href="pestaña4-salud.html">Salud</a></li>
-            </ul>
-          </li>
+<!-- Lista de enlaces -->
+<ul class="menu-list">
+  <!-- Temas de Interés con submenú -->
+  <li class="has-submenu">
+    <a href="#" class="submenu-toggle" role="button" aria-expanded="false" aria-controls="submenu-temas">Temas de Interés</a>
+  <ul id="submenu-temas" class="submenu">
+      <li>
+        <a href="../index.html">
+          <i class="fa-light fa-scale-balanced"></i> Inicio
+        </a>
+      </li>
+      <li>
+        <a href="pestaña2.html">
+          <i class="fas fa-file-alt"></i> Información clave
+        </a>
+      </li>
+      <li>
+        <a href="pestaña5.html">
+          <i class="fa-light fa-scale-balanced"></i> Riesgos laborales
+        </a>
+      </li>
+      <li>
+        <a href="pestaña1.html">
+          <i class="fas fa-file-alt"></i> Jurisprudencia
+        </a>
+      </li>
+      <li>
+        <a href="pestaña4-salud.html">
+          <i class="fas fa-file-alt"></i> Salud
+        </a>
+      </li>
+    </ul>
+  </li>
 
-          <li>
-            <a href="#contactos"><i class="fas fa-headset"></i> Contacto</a>
-          </li>
-        </ul>
+  <!-- Contacto -->
+  <li>
+    <a href="#contactos">
+      <i class="fas fa-headset"></i> Contacto
+    </a>
+  </li>
+</ul>
 
-      </nav>
-    </div>
 </header>
 
-<div id="icon-menu">
+    <!--Blog-->
+   <div id="icon-menu">
   <i class="fas fa-bars"></i>
 </div>
-
-<!-- ===================== CONTENIDO GENERAL ===================== -->
 <div class="container-content">
   <article>
-
     <h1 class="titulo-animado animar-in">Pensiones</h1>
-
+    <p class="animar-in animar-retardo"></p>
+    <br><br>
     <section class="imagen_y_texto animar-in animar-dos">
       <img src="../img/grafico" alt="Pensiones">
       <div class="text_lado">
-        <p>El sistema pensional se compone...</p>
+        <p>El sistema pensional se compone de regímenes público (Colpensiones) y privado (RAIS), pero la jurisprudencia ha sido clave para corregir injusticias y garantizar derechos adquiridos.</p>
       </div>
     </section>
 
-    <h1 class="titulo-animado">El Rol de la Jurisprudencia en Pensiones</h1>
+     <h1 class="titulo-animado"> El Rol de la Jurisprudencia en Pensiones</h1>
 
-    <div class="caso-card jurisprudencia-info animar-in">
-      <p>La jurisprudencia en pensiones cumple una función crucial...</p>
-    </div>
-
-    <div class="caso-card jurisprudencia-info animar-in">
-      <p>Estas decisiones son esenciales...</p>
-    </div>
-
-    <div class="caso-card jurisprudencia-info animar-retardo">
-      <p>Cuando se presentan prácticas administrativas injustas...</p>
-    </div>
-
-    <div class="caso-card jurisprudencia-info animar-retardo">
-      <p>Una vez que se emiten, estas resoluciones deben ser acatadas...</p>
-    </div>
-
-    <h2 class="titulo-animado animar-in">Comparativa de Casos Jurisprudenciales</h2>
-
-    <div class="tabla-comparativa animar-in">
-      <div class="fila-comparativa">
-        <div class="col-caso">
-          <h3>Caso</h3>
-          <p>Pensión negada...</p>
-        </div>
-        <div class="col-impacto">
-          <h3>Impacto</h3>
-          <p>Se aceptaron pruebas...</p>
-        </div>
+      <div class="caso-card jurisprudencia-info animar-in">
+        <p><i class=""></i> La jurisprudencia en pensiones cumple una función crucial como intérprete de las normas legales y constitucionales. No se limita a aplicar la ley, sino que resuelve vacíos normativos, aclara ambigüedades y protege los derechos fundamentales de los ciudadanos.</p>
+      </div>
+      <div class="caso-card jurisprudencia-info animar-in">
+        <p><i class=""></i> Estas decisiones son esenciales para garantizar el derecho a una pensión digna, especialmente en situaciones donde hay vacíos normativos, discrepancias entre administraciones o prácticas injustas por parte de quienes gestionan el sistema de pensiones. La implementación de estas decisiones se lleva a cabo principalmente a través de fallos emitidos por los tribunales, especialmente por cortes constitucionales o supremas, en respuesta a demandas de personas que buscan el reconocimiento de su derecho a una pensión, ajustes en el monto que reciben, pagos retroactivos o el reconocimiento de años de servicio que no han sido contabilizados.</p>
+      </div>
+      <div class="caso-card jurisprudencia-info animar-in animar-retardo">
+        <p><i class=""></i> Cuando se presentan prácticas administrativas injustas, los tribunales constitucionales y contenciosos intervienen para ordenar correcciones. Estos fallos no solo resuelven casos individuales, sino que se convierten en precedentes obligatorios que impactan la política pública y el funcionamiento de las entidades.</p>
+      </div>
+      <div class="caso-card jurisprudencia-info animar-in animar-retardo">
+        <p><i class=""></i> Una vez que se emiten, estas resoluciones deben ser acatadas por las entidades encargadas de la administración de pensiones, tanto públicas como privadas. Esto puede implicar cambios en los procedimientos internos, la revisión de criterios de evaluación, el pago de beneficios atrasados o incluso la reforma de normas que han sido declaradas contrarias a derechos fundamentales. </p>
       </div>
 
-      <div class="fila-comparativa delay">
-        <div class="col-caso">
-          <h3>Caso</h3>
-          <p>Tiempo laborado no contabilizado</p>
-        </div>
-        <div class="col-impacto">
-          <h3>Impacto</h3>
-          <p>La Corte ordenó...</p>
-        </div>
-      </div>
+      <h2 class="titulo-animado animar-in"> Comparativa de Casos Jurisprudenciales</h2>
+
+<div class="tabla-comparativa animar-in animar-retardo">
+  <div class="fila-comparativa">
+    <div class="col-caso">
+      <h3><i class="fas fa-file-alt"></i> Caso</h3>
+      <p>Pensión negada por falta de documentos</p>
     </div>
-
-    <!-- Ventajas y Desafíos -->
-    <div class="contenedor-ventajas-limitaciones animar-in">
-      <div class="columna interactive-box" style="background:#eafff5;">
-        <h2><i class="fas fa-check-circle"></i> Ventajas</h2>
-        <ul>
-          <li>Inclusión social</li>
-          <li>Equidad</li>
-          <li>Evolución</li>
-        </ul>
-      </div>
-
-      <div class="separador"></div>
-
-      <div class="columna interactive-box" style="background:#fff0f0;">
-        <h2><i class="fas fa-exclamation-triangle"></i> Desafíos</h2>
-        <ul>
-          <li>Carga judicial</li>
-          <li>Presupuesto</li>
-          <li>Coherencia</li>
-        </ul>
-      </div>
+    <div class="col-impacto">
+      <h3><i class="fas fa-gavel"></i> Impacto</h3>
+      <p>Se aceptaron pruebas supletorias por orden judicial, garantizando el derecho a la pensión.</p>
     </div>
+  </div>
 
-    <h1 class="titulo-animado">Casos reales</h1>
+  <div class="fila-comparativa delay">
+    <div class="col-caso">
+      <h3><i class="fas fa-clock"></i> Caso</h3>
+      <p>Tiempo laborado no contabilizado</p>
+    </div>
+    <div class="col-impacto">
+      <h3><i class="fas fa-balance-scale"></i> Impacto</h3>
+      <p>La Corte ordenó reconocer semanas omitidas, modificando criterios administrativos injustos.</p>
+    </div>
+  </div>
+</div>
+
+
+     <div class="contenedor-ventajas-limitaciones animar-in">
+  <div class="columna interactive-box" style="background: #eafff5; border-left: 6px solid #1ab188;">
+    <h2 style="text-align: center; color: #1ab188;"><i class="fas fa-check-circle"></i> Ventajas</h2>
+    <ul>
+      <li><strong>Inclusión social:</strong> Corrige exclusiones injustas.</li>
+      <li><strong>Equidad:</strong> Homologa criterios entre regímenes.</li>
+      <li><strong>Evolución:</strong> Impulsa reformas legales.</li>
+    </ul>
+  </div>
+
+  <div class="separador"></div>
+
+  <div class="columna interactive-box" style="background: #fff0f0; border-left: 6px solid #d14d4d;">
+    <h2 style="text-align: center; color: #d14d4d;"><i class="fas fa-exclamation-triangle"></i> Desafíos</h2>
+    <ul>
+      <li><strong>Carga judicial:</strong> Aumenta el volumen de demandas.</li>
+      <li><strong>Presupuesto:</strong> Genera tensiones fiscales por retroactivos.</li>
+      <li><strong>Coherencia:</strong> Algunos fallos afectan políticas generales.</li>
+    </ul>
+  </div>
+</div>
+
+    <h1 class="titulo-animado">Casos reales que sorprendieron a Colombia</h1>
 
     <div class="caso-box animar-in">
-      <img src="../img/ley-prima-trabajadoras-domesticas.png">
+      <img src="../img/ley-prima-trabajadoras-domesticas.png" alt="Caso pensional 1">
       <div>
         <h3>El caso de Rosa Emilia</h3>
-        <p>Después de 30 años...</p>
+        <p>Después de 30 años de trabajo doméstico informal, logró una pensión gracias a un fallo que reconoció su situación de vulnerabilidad. Un hito para miles de mujeres sin contrato formal.</p>
       </div>
     </div>
 
-    <div class="caso-box animar-retardo">
-      <img src="../img/5.jpg">
+    <div class="caso-box animar-in animar-retardo">
+      <img src="../img/5.jpg" alt="Caso pensional 2">
       <div>
         <h3>El minero de Boyacá</h3>
-        <p>Un trabajador minero...</p>
+        <p>Un trabajador minero, diagnosticado con enfermedad pulmonar, recibió pensión anticipada por actividad de alto riesgo, tras lucha legal de dos años. Hoy es referente en pensiones especiales.</p>
       </div>
     </div>
 
-    <div class="caso-box animar-dos">
-      <img src="../img/7.jpg">
+    <div class="caso-box animar-in animar-dos">
+      <img src="../img/7.jpg" alt="Caso pensional 3">
       <div>
         <h3>Viuda y madre cabeza de hogar</h3>
-        <p>María Fernanda logró...</p>
+        <p>María Fernanda, viuda de un conductor, logró la pensión de sobreviviente pese a no estar casada formalmente, gracias a prueba de convivencia y dependencia económica. Un fallo ejemplar.</p>
       </div>
     </div>
 
-    <h1 class="titulo-animado animar-in">Tipos de Pensiones</h1>
+    <h1 class="titulo-animado">¿Por qué es tan importante?</h1>
+    <p class="animar-in">El sistema pensional es la red de seguridad más importante para la población adulta mayor. Asegura que nadie quede desamparado al final de su vida laboral.</p>
 
-    <div class="tabla-container animar-in">
+   <div class="contenedor-ventajas-limitaciones animar-in">
+  <!-- Columna: Beneficios -->
+  <div class="columna interactive-box" style="background: #eafff5; border-left: 6px solid #1ab188;">
+    <h2 style="text-align: center; color: #1ab188;">
+      <i class="fas fa-thumbs-up"></i> Beneficios
+    </h2>
+    <ul>
+      <li><strong>Seguridad:</strong> Asegura ingresos periódicos.</li>
+      <li><strong>Protección:</strong> Cobertura ante invalidez o muerte.</li>
+      <li><strong>Opciones:</strong> Participación en sistema público y privado.</li>
+      <li><strong>Orientación:</strong> Acceso a doble asesoría legal.</li>
+    </ul>
+  </div>
+
+  <div class="separador"></div>
+
+  <!-- Columna: Limitaciones -->
+  <div class="columna interactive-box" style="background: #fff0f0; border-left: 6px solid #d14d4d;">
+    <h2 style="text-align: center; color: #d14d4d;">
+      <i class="fas fa-exclamation-circle"></i> Limitaciones
+    </h2>
+    <ul>
+      <li><strong>Informalidad:</strong> Alta tasa fuera del sistema.</li>
+      <br>
+      <li><strong>Desigualdad:</strong> Brechas entre regímenes.</li>
+      <br>
+      <li><strong>Complejidad:</strong> Trámites difíciles y excluyentes.</li>
+    </ul>
+  </div>
+</div>
+  
+
+    <h1 class="titulo-animado animar-in">Tipos de Pensiones en Colombia</h1>
+    <div class="tabla-container animar-in animar-retardo">
       <table class="tabla-animada">
         <thead>
           <tr>
-            <th>Tipo</th>
+            <th>Tipo de Pensión</th>
             <th>Descripción</th>
-            <th>Requisitos</th>
+            <th>Requisitos Generales</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Vejez</td><td>Por edad</td><td>1300 semanas</td></tr>
-          <tr><td>Invalidez</td><td>Pérdida laboral</td><td>50 semanas</td></tr>
-          <tr><td>Sobrevivientes</td><td>Afiliado fallecido</td><td>Dependencia</td></tr>
-          <tr><td>Anticipada</td><td>Antes de la edad</td><td>Capital suficiente</td></tr>
-          <tr><td>Alto Riesgo</td><td>Actividades peligrosas</td><td>Menor edad</td></tr>
-          <tr><td>Transición</td><td>Ley 100</td><td>Tiempo previo</td></tr>
-          <tr><td>Indemnización</td><td>Pago único</td><td>Cotizaciones incompletas</td></tr>
+          <tr>
+            <td>Vejez</td>
+            <td>Reconocimiento por edad y semanas cotizadas.</td>
+            <td>57 años mujeres / 62 hombres + 1300 semanas.</td>
+          </tr>
+          <tr>
+            <td>Invalidez</td>
+            <td>Por pérdida del 50% o más de capacidad laboral.</td>
+            <td>Calificación médica y mínimo 50 semanas recientes.</td>
+          </tr>
+          <tr>
+            <td>Sobrevivientes</td>
+            <td>Otorgada a los beneficiarios de un afiliado fallecido.</td>
+            <td>Dependencia económica y pruebas de convivencia.</td>
+          </tr>
+          <tr>
+            <td>Anticipada</td>
+            <td>Permite pensionarse antes de la edad si hay suficiente capital.</td>
+            <td>Régimen RAIS con capital equivalente a pensión mínima.</td>
+          </tr>
+          <tr>
+            <td>Alto Riesgo</td>
+            <td>Para quienes ejercen trabajos de alta exposición o peligro.</td>
+            <td>Menor edad de pensión y semanas según sector.</td>
+          </tr>
+          <tr>
+            <td>Régimen de Transición</td>
+            <td>Aplica para quienes tenían derechos antes de Ley 100/93.</td>
+            <td>Edad + tiempo laborado hasta 1994.</td>
+          </tr>
+          <tr>
+            <td>Indemnización Sustitutiva</td>
+            <td>Pago único a quienes no cumplen requisitos para pensión.</td>
+            <td>Cotizaciones incompletas + solicitud formal.</td>
+          </tr>
         </tbody>
       </table>
     </div>
-
-    <!-- ================== CALCULADORA *DENTRO* DEL RECUADRO ================== -->
+     <!-- ================== CALCULADORA *DENTRO* DEL RECUADRO ================== -->
     <div class="calculadora-container animar-in">
       <h2 class="calculadora-titulo">🧮 Calculadora de Pensión</h2>
       <p class="calculadora-descripcion">Ingresa tus datos para estimar tu pensión.</p>
@@ -192,7 +277,7 @@
         <input type="number" id="semanas" placeholder="Ej: 500">
 
         <label>Salario mensual (COP):</label>
-        <input type="number" id="salario"  placeholder="Ej: 2.000.000">
+        <input type="number" id="salario" placeholder="Ej: 2.000.000">
 
         <label>Sexo:</label>
         <select id="sexo">
@@ -200,43 +285,41 @@
           <option value="F">Mujer</option>
         </select>
 
-        <button onclick="calcularPension()" class="btn-calcular">Calcular mi pensión</button>
+        <button onclick="calcularPension()" class="btn-calcular">Calcular</button>
 
         <div id="resultado" class="resultado"></div>
       </div>
     </div>
-
   </article>
 </div>
+    <div class="container-footer">	
+        <footer id="contactos">
+            <div class="logo-footer">
+                <a href=""><img src="../img/WhatsApp_Image_2025-04-15_at_10.22.32_AM-removebg-preview.png" alt=""></a>
+            </div>
 
-<!-- FOOTER -->
-<div class="container-footer">
-  <footer id="contactos">
-    <div class="logo-footer">
-      <img src="../img/WhatsApp_Image_2025-04-15_at_10.22.32_AM-removebg-preview.png">
+            <!-- Contenedor de redes sociales alineado a la izquierda -->
+            <div class="redes-footer-wrapper">
+            <div class="redes-footer redes-footer--left">
+            <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+            <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+
+            <!-- Contenedor de redes sociales alineado a la derecha -->
+            <div class="redes-footer redes-footer--right">
+            <a href="#"><i class="fa-brands fa-threads icon-redes-footer"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok icon-redes-footer"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter icon-redes-footer"></i></a>
+            </div>
+            </div>  
+            <hr>
+            <h4>© 2025 legalab - Todos los Derechos Reservados al Estado Colombiano</h4>
+        </footer>
     </div>
-
-    <div class="redes-footer-wrapper">
-      <div class="redes-footer redes-footer--left">
-         <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-          <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-          <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-      </div>
-
-      <div class="redes-footer redes-footer--right">
-        <a href="#"><i class="fa-brands fa-threads icon-redes-footer"></i></a>
-        <a href="#"><i class="fa-brands fa-tiktok icon-redes-footer"></i></i></a>
-        <a href="#"><i class="fa-brands fa-twitter icon-redes-footer"></i></a>
-      </div>
-    </div>
-
-    <hr>
-    <h4>© 2025 legalab - Todos los Derechos Reservados al Estado Colombiano</h4>
-  </footer>
-</div>
-
 <script>
 function calcularPension() {
+
   let edad = parseInt(document.getElementById("edad").value);
   let semanas = parseInt(document.getElementById("semanas").value);
   let salario = parseInt(document.getElementById("salario").value);
@@ -245,34 +328,65 @@ function calcularPension() {
 
   if (!edad || !semanas || !salario) {
     salida.style.display = "block";
-    salida.innerHTML = "⚠️ Completa todos los campos.";
+    salida.innerHTML = "⚠️ Por favor completa todos los campos.";
     return;
   }
 
-  let reqSem = 1300;
-  let reqEdad = sexo === "M" ? 62 : 57;
-  let semanasFaltantes = Math.max(0, reqSem - semanas);
-  let edadFaltante = Math.max(0, reqEdad - edad);
+  // Requisitos legales
+  let semanasRequeridas = 1300;
+  let edadRequerida = sexo === "M" ? 62 : 57;
+
+  // Cálculo de faltantes
+  let semanasFaltantes = Math.max(0, semanasRequeridas - semanas);
+  let edadFaltante = Math.max(0, edadRequerida - edad);
+
+  // Tiempo estimado para llegar a las semanas (basado en 50 semanas al año)
   let añosParaSemanas = (semanasFaltantes / 50).toFixed(1);
-  let ibl = salario * 0.9;
 
+  // IBL aproximado (salario promedio)
+  let ibl = salario * 0.9; // valor más realista que usar 100%
+
+  // Porcentaje base (65%) + 0.02% por semana extra
   let porcentajeBase = 0.65;
-  let adicional = Math.max(0, semanas - reqSem) * 0.0002;
-  if (adicional > 0.20) adicional = 0.20;
+  let adicional = Math.max(0, semanas - semanasRequeridas) * 0.0002;
+  if (adicional > 0.20) adicional = 0.20; // topo del 20%
 
-  let pension = ibl * (porcentajeBase + adicional);
+  let porcentajeFinal = porcentajeBase + adicional;
+
+  // Pensión estimada
+  let pensionEstim = ibl * porcentajeFinal;
+
+  // Pensión mínima y máxima por ley
+  let pensionMin = 1 * 1300000; // salario mínimo ejemplo
+  let pensionMax = 25 * 1300000;
+
+  if (pensionEstim < pensionMin) pensionEstim = pensionMin;
+  if (pensionEstim > pensionMax) pensionEstim = pensionMax;
 
   salida.style.display = "block";
   salida.innerHTML = `
-    <h3>Resultados</h3>
-    Edad requerida: <b>${reqEdad}</b><br>
-    Semanas requeridas: <b>${reqSem}</b><br><br>
+    <h3>📌 Requisitos para Pensión</h3>
+    - Edad requerida: <b>${edadRequerida} años</b><br>
+    - Semanas requeridas: <b>${semanasRequeridas}</b><br><br>
+
+    <h3>📊 Análisis de tu situación</h3>
+    Edad actual: <b>${edad}</b> años<br>
+    Semanas cotizadas: <b>${semanas}</b><br>
     Semanas faltantes: <b>${semanasFaltantes}</b><br>
-    Edad faltante: <b>${edadFaltante}</b><br><br>
-    Tu pensión estimada sería: <b>$${pension.toLocaleString("es-CO")}</b>
+    Años faltantes por semanas: <b>${añosParaSemanas}</b><br>
+    Años faltantes por edad: <b>${edadFaltante}</b><br><br>
+
+    <h3>💵 Cálculo Económico</h3>
+    IBL estimado: <b>$${ibl.toLocaleString("es-CO")}</b><br>
+    Porcentaje de liquidación: <b>${(porcentajeFinal*100).toFixed(2)}%</b><br>
+    Tu pensión estimada sería: <b>$${pensionEstim.toLocaleString("es-CO")}</b> COP mensuales.<br><br>
+
+    <i>Este cálculo es aproximado e informativo, basado en las reglas generales de Colpensiones.</i>
   `;
 }
 </script>
+
+<link rel="stylesheet" href="../JS/pensiones.js">
 
 </body>
 </html>
